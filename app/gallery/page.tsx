@@ -10,7 +10,7 @@ const galleryItems = [
   {
     id: 1,
     title: "Custom Dropside Body",
-    image: "/images/dropside-body.jpeg",
+    image: "/images/dropside-fineline.jpeg",
   },
   {
     id: 4,
@@ -20,7 +20,7 @@ const galleryItems = [
   {
     id: 7,
     title: "Box Van Body",
-    image: "/images/box-van-body.jpeg",
+    image: "/images/box-van-fineline.jpeg",
   },
   {
     id: 10,
@@ -28,19 +28,9 @@ const galleryItems = [
     image: "/images/curtainside-body.jpeg",
   },
   {
-    id: 13,
-    title: "Luton Van Body",
-    image: "/images/luton-body.jpeg",
-  },
-  {
     id: 16,
     title: "Flatbed Body",
     image: "/images/flatbed-body.png",
-  },
-  {
-    id: 19,
-    title: "Refrigerated Body",
-    image: "/images/refrigerated-body.jpeg",
   },
   {
     id: 22,
@@ -76,6 +66,26 @@ const galleryItems = [
     id: 32,
     title: "Overview Project",
     image: "/images/overview-image.jpeg",
+  },
+  {
+    id: 35,
+    title: "Professional Furniture Removal Van",
+    image: "/images/furniture-removal-van.png",
+  },
+  {
+    id: 36,
+    title: "Builders Merchant Body with Crane",
+    image: "/images/builders-merchant-fineline.jpeg",
+  },
+  {
+    id: 37,
+    title: "Curtain Sider with Moffett Forklift",
+    image: "/images/curtain-sider-moffett-fineline.jpeg",
+  },
+  {
+    id: 38,
+    title: "5 Door Furniture Removal Van",
+    image: "/images/5-door-furniture-removal-fineline.jpeg",
   },
 ]
 
@@ -325,7 +335,7 @@ export default function GalleryPage() {
           </div>
 
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} jwa.services. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} FineLine Bodies. All rights reserved.</p>
           </div>
         </div>
       </footer>

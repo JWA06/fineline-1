@@ -27,8 +27,8 @@ const bodyTypes = [
     description: "Versatile enclosed bodies ideal for general cargo and goods transportation.",
     detailedDescription:
       "Our box van bodies offer secure, weatherproof storage solutions perfect for delivery services, retail distribution, and general cargo transport. Built with lightweight yet durable materials.",
-    image: "/images/box-van-body.jpeg",
-    gallery: ["/images/box-van-1.jpg", "/images/box-van-2.jpg", "/images/box-van-3.jpg"],
+    image: "/images/box-van-fineline.jpeg",
+    gallery: ["/images/box-van-fineline.jpeg", "/images/box-van-2.jpg", "/images/box-van-3.jpg"],
     features: ["Secure enclosed storage", "Weather protection", "Customizable shelving", "Multiple door options"],
     applications: ["Delivery services", "Retail distribution", "Moving services", "General cargo"],
     testimonial: {
@@ -46,8 +46,8 @@ const bodyTypes = [
     description: "Practical open bodies with fold-down sides for easy loading and unloading.",
     detailedDescription:
       "Featuring robust aluminum or steel construction with easy-operation drop sides, these bodies are perfect for construction, landscaping, and general haulage applications.",
-    image: "/images/dropside-body.jpeg",
-    gallery: ["/images/dropside-1.jpg", "/images/dropside-2.jpg", "/images/dropside-3.jpg"],
+    image: "/images/dropside-fineline.jpeg",
+    gallery: ["/images/dropside-fineline.jpeg", "/images/dropside-2.jpg", "/images/dropside-3.jpg"],
     features: ["Easy side access", "Versatile loading options", "Robust construction", "Quick-release mechanisms"],
     applications: ["Construction", "Landscaping", "General haulage", "Building supplies"],
     testimonial: {
@@ -77,14 +77,62 @@ const bodyTypes = [
     videoUrl: "/videos/furniture-van-demo.mp4",
   },
   {
+    id: 9,
+    name: "Furniture Removal Van",
+    category: "Specialized",
+    description:
+      "Professional multi-compartment removal vans with hydraulic tail lifts for efficient furniture moving.",
+    detailedDescription:
+      "Specialized furniture removal vans featuring multiple glass-fronted compartments for organized storage, hydraulic tail lifts for easy loading, and professional-grade construction. Perfect for removal companies requiring maximum efficiency and furniture protection.",
+    image: "/images/furniture-removal-van.png",
+    gallery: ["/images/furniture-removal-van.png"],
+    features: [
+      "Multiple glass compartments",
+      "Hydraulic tail lift",
+      "Organized storage system",
+      "Professional appearance",
+    ],
+    applications: ["House removals", "Office relocations", "Furniture transport", "Commercial moving"],
+    testimonial: {
+      quote: "The compartmentalized design makes our removals so much more organized and efficient.",
+      author: "David Miller",
+      company: "Premier Removals",
+    },
+    videoUrl: "/videos/furniture-removal-demo.mp4",
+  },
+  {
+    id: 12,
+    name: "5 Door Furniture Removal Van",
+    category: "Specialized",
+    description:
+      "Advanced multi-compartment removal van with five individual access doors for maximum organization and efficiency.",
+    detailedDescription:
+      "Professional 5-door furniture removal van featuring five separate compartments with individual access doors. Each compartment provides secure, organized storage for different furniture categories, making loading and unloading more efficient. Perfect for high-end removal services requiring maximum organization and furniture protection.",
+    image: "/images/5-door-furniture-removal-fineline.jpeg",
+    gallery: ["/images/5-door-furniture-removal-fineline.jpeg"],
+    features: [
+      "Five individual compartments",
+      "Separate access doors",
+      "Organized storage system",
+      "Professional aluminum construction",
+    ],
+    applications: ["Premium removals", "Furniture logistics", "High-value item transport", "Organized moving services"],
+    testimonial: {
+      quote: "The 5-door system revolutionized our removal process. Each item category has its own secure compartment.",
+      author: "Michael Roberts",
+      company: "Elite Removals",
+    },
+    videoUrl: "/videos/5-door-furniture-removal-demo.mp4",
+  },
+  {
     id: 4,
     name: "Curtainside Bodies",
     category: "Commercial",
     description: "Flexible side-access bodies with sliding curtains for easy loading.",
     detailedDescription:
       "Ideal for pallet delivery and freight transport, our curtainside bodies offer full side access while maintaining weather protection and cargo security.",
-    image: "/images/curtainside-body.jpeg",
-    gallery: ["/images/curtainside-1.jpg", "/images/curtainside-2.jpg"],
+    image: "/images/curtain-side-body-fineline.jpeg",
+    gallery: ["/images/curtain-side-body-fineline.jpeg", "/images/curtainside-1.jpg", "/images/curtainside-2.jpg"],
     features: ["Full side access", "Weather protection", "Secure transportation", "Forklift compatible"],
     applications: ["Freight transport", "Pallet delivery", "Distribution", "Logistics"],
     testimonial: {
@@ -95,40 +143,29 @@ const bodyTypes = [
     videoUrl: "/videos/curtainside-demo.mp4",
   },
   {
-    id: 5,
-    name: "Luton Bodies",
-    category: "Commercial",
-    description: "Extended storage bodies with over-cab space for maximum capacity.",
-    detailedDescription:
-      "Maximize your cargo space with our Luton bodies featuring aerodynamic design and lightweight construction. Perfect for removals and bulky item transport.",
-    image: "/images/luton-body.jpeg",
-    gallery: ["/images/luton-1.jpg", "/images/luton-2.jpg"],
-    features: ["Maximized storage space", "Aerodynamic design", "Lightweight construction", "Tail lift compatible"],
-    applications: ["Removals", "Furniture delivery", "Retail distribution", "Parcel delivery"],
-    testimonial: {
-      quote: "Perfect for our removal business. The extra space over the cab makes all the difference.",
-      author: "John Smith",
-      company: "Smith Removals",
-    },
-    videoUrl: "/videos/luton-demo.mp4",
-  },
-  {
-    id: 6,
-    name: "Refrigerated Bodies",
+    id: 11,
+    name: "Curtain Sider Moffett",
     category: "Specialized",
-    description: "Temperature-controlled bodies for transporting perishable goods.",
+    description:
+      "Advanced curtain sider bodies with integrated Moffett forklift systems for independent loading operations.",
     detailedDescription:
-      "Maintain precise temperature control with our refrigerated bodies. Features advanced insulation and reliable cooling systems for pharmaceutical and food transport.",
-    image: "/images/refrigerated-body.jpeg",
-    gallery: ["/images/refrigerated-1.jpg", "/images/refrigerated-2.jpg"],
-    features: ["Temperature control", "Insulated construction", "Compliance with regulations", "Monitoring systems"],
-    applications: ["Food transport", "Pharmaceutical", "Catering", "Medical supplies"],
+      "Specialized curtain sider bodies featuring integrated Moffett truck-mounted forklift systems. Perfect for businesses requiring independent loading and unloading capabilities at locations without dock facilities. Combines the flexibility of side access with the convenience of onboard material handling equipment.",
+    image: "/images/curtain-sider-moffett-fineline.jpeg",
+    gallery: ["/images/curtain-sider-moffett-fineline.jpeg"],
+    features: [
+      "Integrated Moffett forklift",
+      "Full side curtain access",
+      "Independent operation",
+      "Weather protection",
+    ],
+    applications: ["Remote deliveries", "Construction sites", "Retail distribution", "Industrial logistics"],
     testimonial: {
-      quote: "Excellent temperature control and reliability. Essential for our food distribution.",
-      author: "Lisa Brown",
-      company: "Fresh Foods Ltd",
+      quote:
+        "The Moffett system gives us complete independence. We can deliver anywhere without relying on customer equipment.",
+      author: "Paul Stevens",
+      company: "Stevens Distribution",
     },
-    videoUrl: "/videos/refrigerated-demo.mp4",
+    videoUrl: "/videos/curtain-sider-moffett-demo.mp4",
   },
   {
     id: 7,
@@ -165,6 +202,29 @@ const bodyTypes = [
       company: "Specialist Services",
     },
     videoUrl: "/videos/bespoke-demo.mp4",
+  },
+  {
+    id: 10,
+    name: "Builders Merchant Bodies",
+    category: "Industrial",
+    description: "Heavy-duty flatbed bodies with integrated crane systems for construction material delivery.",
+    detailedDescription:
+      "Specialized builders merchant bodies featuring robust flatbed construction with integrated HIAB/crane systems. Perfect for delivering heavy building materials like bricks, blocks, timber, and steel directly to construction sites with precision placement capability.",
+    image: "/images/builders-merchant-fineline.jpeg",
+    gallery: ["/images/builders-merchant-fineline.jpeg"],
+    features: [
+      "Integrated crane system",
+      "Heavy-duty construction",
+      "Load restraint systems",
+      "Multi-axle compatibility",
+    ],
+    applications: ["Building material delivery", "Construction supply", "Timber delivery", "Steel placement"],
+    testimonial: {
+      quote: "The crane makes all the difference for our heavy material deliveries. Excellent build quality.",
+      author: "Tom Richards",
+      company: "Richards Building Supplies",
+    },
+    videoUrl: "/videos/builders-merchant-demo.mp4",
   },
 ]
 
