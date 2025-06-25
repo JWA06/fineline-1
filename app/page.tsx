@@ -764,7 +764,7 @@ export default function Home() {
               >
                 <div className="relative z-10 h-96 w-full">
                   <Image
-                    src="/images/box-van-body.jpeg"
+                    src="/images/box-van-fineline.jpeg"
                     alt="Our Pick Box Van Body - Expert recommended commercial vehicle body solution by FineLine Bodies"
                     fill
                     className="rounded shadow-xl object-cover"
