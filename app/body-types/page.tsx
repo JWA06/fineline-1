@@ -28,7 +28,11 @@ const bodyTypes = [
     detailedDescription:
       "Our box van bodies offer secure, weatherproof storage solutions perfect for delivery services, retail distribution, and general cargo transport. Built with lightweight yet durable materials.",
     image: "/images/box-van-fineline.jpeg",
-    gallery: ["/images/box-van-fineline.jpeg", "/images/box-van-2.jpg", "/images/box-van-3.jpg"],
+    gallery: [
+      "/images/box-van-fineline.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.01.17%20AM-ehrMI3aZA7EYtQUbwoZG0c6VfkA1O0.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.01.17%20AM%20%281%29-V44F3n9ju21hlgA1TLlDCfwCycWBY5.jpeg",
+    ],
     features: ["Secure enclosed storage", "Weather protection", "Customizable shelving", "Multiple door options"],
     applications: ["Delivery services", "Retail distribution", "Moving services", "General cargo"],
     testimonial: {
@@ -47,7 +51,11 @@ const bodyTypes = [
     detailedDescription:
       "Featuring robust aluminum or steel construction with easy-operation drop sides, these bodies are perfect for construction, landscaping, and general haulage applications.",
     image: "/images/dropside-fineline.jpeg",
-    gallery: ["/images/dropside-fineline.jpeg", "/images/dropside-2.jpg", "/images/dropside-3.jpg"],
+    gallery: [
+      "/images/dropside-fineline.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%209.57.05%20AM-oBVngCVx2VB35UqLtT0sVgTD44yZkh.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%209.57.05%20AM%20%281%29-MMr1a4dDGWu3XjExpTUD0BFPDaCcYj.jpeg",
+    ],
     features: ["Easy side access", "Versatile loading options", "Robust construction", "Quick-release mechanisms"],
     applications: ["Construction", "Landscaping", "General haulage", "Building supplies"],
     testimonial: {
@@ -59,24 +67,6 @@ const bodyTypes = [
     videoUrl: "/videos/dropside-demo.mp4",
   },
   {
-    id: 3,
-    name: "Furniture Van Bodies",
-    category: "Commercial",
-    description: "Specialized multi-compartment bodies designed for safe furniture and household goods transportation.",
-    detailedDescription:
-      "Purpose-built furniture van bodies featuring multiple secure compartments, padded interiors, and individual access doors. Perfect for removal companies and furniture retailers requiring organized and secure transportation of various furniture items.",
-    image: "/images/furniture-van.jpeg",
-    gallery: ["/images/furniture-van-1.jpg", "/images/furniture-van-2.jpg", "/images/furniture-van-3.jpg"],
-    features: ["Padded interior walls", "Load restraint systems", "Easy access doors", "Anti-slip flooring"],
-    applications: ["Furniture delivery", "House removals", "Retail distribution", "Antique transport"],
-    testimonial: {
-      quote: "Perfect for our furniture delivery service. The padded interior protects our products perfectly.",
-      author: "James Wilson",
-      company: "Wilson Furniture",
-    },
-    videoUrl: "/videos/furniture-van-demo.mp4",
-  },
-  {
     id: 9,
     name: "Furniture Removal Van",
     category: "Specialized",
@@ -85,7 +75,11 @@ const bodyTypes = [
     detailedDescription:
       "Specialized furniture removal vans featuring multiple glass-fronted compartments for organized storage, hydraulic tail lifts for easy loading, and professional-grade construction. Perfect for removal companies requiring maximum efficiency and furniture protection.",
     image: "/images/furniture-removal-van.png",
-    gallery: ["/images/furniture-removal-van.png"],
+    gallery: [
+      "/images/furniture-removal-van.png",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%209.59.17%20AM%20%281%29-okHA2XnUwx5x4wB4TkBJk0oFjXXMq9.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%209.59.17%20AM-1BdCiqtRN5KyMnyPbBdLgqMyZtVqrF.jpeg",
+    ],
     features: [
       "Multiple glass compartments",
       "Hydraulic tail lift",
@@ -109,7 +103,6 @@ const bodyTypes = [
     detailedDescription:
       "Professional 5-door furniture removal van featuring five separate compartments with individual access doors. Each compartment provides secure, organized storage for different furniture categories, making loading and unloading more efficient. Perfect for high-end removal services requiring maximum organization and furniture protection.",
     image: "/images/5-door-furniture-removal-fineline.jpeg",
-    gallery: ["/images/5-door-furniture-removal-fineline.jpeg"],
     features: [
       "Five individual compartments",
       "Separate access doors",
@@ -123,6 +116,11 @@ const bodyTypes = [
       company: "Elite Removals",
     },
     videoUrl: "/videos/5-door-furniture-removal-demo.mp4",
+    gallery: [
+      "/images/5-door-furniture-removal-fineline.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%205.38.51%20PM-LFXwF16GsM9icnMqgh7NnfJMOnmQOR.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%205.38.52%20PM-MV437Z5zAwSdOHKH9L7VgzuHcHcHpm.jpeg",
+    ],
   },
   {
     id: 4,
@@ -132,7 +130,11 @@ const bodyTypes = [
     detailedDescription:
       "Ideal for pallet delivery and freight transport, our curtainside bodies offer full side access while maintaining weather protection and cargo security.",
     image: "/images/curtain-side-body-fineline.jpeg",
-    gallery: ["/images/curtain-side-body-fineline.jpeg", "/images/curtainside-1.jpg", "/images/curtainside-2.jpg"],
+    gallery: [
+      "/images/curtain-side-body-fineline.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.37.41%20AM%20%281%29-MvqVFq1hcLOLsulmokMtTJmlR7meQt.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.37.41%20AM-ACk3yEK2cckeByD4hAolyHfnnMvfk4.jpeg",
+    ],
     features: ["Full side access", "Weather protection", "Secure transportation", "Forklift compatible"],
     applications: ["Freight transport", "Pallet delivery", "Distribution", "Logistics"],
     testimonial: {
@@ -211,7 +213,11 @@ const bodyTypes = [
     detailedDescription:
       "Specialized builders merchant bodies featuring robust flatbed construction with integrated HIAB/crane systems. Perfect for delivering heavy building materials like bricks, blocks, timber, and steel directly to construction sites with precision placement capability.",
     image: "/images/builders-merchant-fineline.jpeg",
-    gallery: ["/images/builders-merchant-fineline.jpeg"],
+    gallery: [
+      "/images/builders-merchant-fineline.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.35.45%20AM-MrEf7IuLShXqiln3qA4fsi8p66kCzx.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.35.45%20AM%20%282%29-RZBT1TxauYAe2vfUDv0KessOfW2b09.jpeg",
+    ],
     features: [
       "Integrated crane system",
       "Heavy-duty construction",
@@ -240,6 +246,9 @@ export default function BodyTypes() {
   const [viewMode, setViewMode] = useState("grid") // grid or list
   const [showCompareModal, setShowCompareModal] = useState(false)
   const [showMobileMenu, setShowMobileMenu] = useState(false)
+  const [showImageGallery, setShowImageGallery] = useState(false)
+  const [selectedGallery, setSelectedGallery] = useState([])
+  const [currentImageIndex, setCurrentImageIndex] = useState(0)
 
   // Filter and search logic
   const filteredBodyTypes = useMemo(() => {
@@ -268,6 +277,20 @@ export default function BodyTypes() {
 
   const isInCompare = (bodyTypeId) => {
     return compareList.some((item) => item.id === bodyTypeId)
+  }
+
+  const openImageGallery = (bodyType, imageIndex = 0) => {
+    setSelectedGallery(bodyType.gallery)
+    setCurrentImageIndex(imageIndex)
+    setShowImageGallery(true)
+  }
+
+  const nextImage = () => {
+    setCurrentImageIndex((prev) => (prev + 1) % selectedGallery.length)
+  }
+
+  const prevImage = () => {
+    setCurrentImageIndex((prev) => (prev - 1 + selectedGallery.length) % selectedGallery.length)
   }
 
   return (
@@ -536,6 +559,60 @@ export default function BodyTypes() {
             Showing {filteredBodyTypes.length} of {bodyTypes.length} body types
             {searchTerm && ` for "${searchTerm}"`}
           </div>
+          {/* Comparison Tool Highlight */}
+          <div className="mt-6 bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-200 rounded-xl p-6">
+            <div className="flex flex-col md:flex-row items-center justify-between">
+              <div className="flex items-center mb-4 md:mb-0">
+                <div className="bg-blue-500 p-3 rounded-full mr-4">
+                  <Compare size={24} className="text-white" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-bold text-gray-900 mb-1">Compare Body Types</h3>
+                  <p className="text-sm text-gray-600">
+                    Select up to 3 body types to compare features, applications, and specifications side by side
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center space-x-4">
+                <div className="text-sm text-gray-600">
+                  {compareList.length === 0
+                    ? "Click the compare icon on any body type to start"
+                    : `${compareList.length}/3 selected`}
+                </div>
+                {compareList.length > 0 && (
+                  <button
+                    onClick={() => setShowCompareModal(true)}
+                    className="bg-blue-500 text-white px-6 py-2 rounded-lg font-medium hover:bg-blue-600 transition-colors flex items-center"
+                  >
+                    Compare Now
+                    <Compare size={16} className="ml-2" />
+                  </button>
+                )}
+              </div>
+            </div>
+
+            {compareList.length > 0 && (
+              <div className="mt-4 pt-4 border-t border-blue-200">
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-sm font-medium text-gray-700 mr-2">Selected:</span>
+                  {compareList.map((item) => (
+                    <div
+                      key={item.id}
+                      className="bg-white border border-blue-200 px-3 py-1 rounded-full text-sm flex items-center"
+                    >
+                      {item.name}
+                      <button
+                        onClick={() => toggleCompare(item)}
+                        className="ml-2 text-gray-400 hover:text-red-500 transition-colors"
+                      >
+                        <X size={14} />
+                      </button>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </div>
       </section>
 
@@ -605,23 +682,32 @@ export default function BodyTypes() {
                   {/* Compare Button */}
                   <button
                     onClick={() => toggleCompare(bodyType)}
-                    className={`absolute top-4 right-4 z-10 p-2 rounded-full transition-all ${
-                      isInCompare(bodyType.id) ? "bg-black text-white" : "bg-white/80 text-gray-600 hover:bg-white"
+                    className={`absolute top-4 right-4 z-10 p-3 rounded-full transition-all shadow-lg ${
+                      isInCompare(bodyType.id)
+                        ? "bg-blue-500 text-white shadow-blue-200"
+                        : "bg-white text-gray-600 hover:bg-blue-50 hover:text-blue-600 shadow-gray-200"
                     }`}
+                    title={isInCompare(bodyType.id) ? "Remove from comparison" : "Add to comparison"}
                   >
-                    <Compare size={16} />
+                    <Compare size={18} />
                   </button>
 
                   {/* Image with Overlay */}
-                  <div className="relative h-64 overflow-hidden">
+                  <button
+                    className="relative h-64 overflow-hidden w-full"
+                    onClick={() => openImageGallery(bodyType, 0)}
+                  >
                     <Image
                       src={bodyType.image || "/placeholder.svg"}
                       alt={bodyType.name}
                       fill
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                  </div>
+                    {/* Image count indicator */}
+                    <div className="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-xs">
+                      {bodyType.gallery.length} photos
+                    </div>
+                  </button>
 
                   {/* Content */}
                   <div className="p-6">
@@ -685,13 +771,14 @@ export default function BodyTypes() {
                         </div>
                         <button
                           onClick={() => toggleCompare(bodyType)}
-                          className={`p-2 rounded-full transition-all ${
+                          className={`p-3 rounded-full transition-all shadow-lg ${
                             isInCompare(bodyType.id)
-                              ? "bg-black text-white"
-                              : "bg-gray-100 text-gray-600 hover:bg-gray-200"
+                              ? "bg-blue-500 text-white shadow-blue-200"
+                              : "bg-gray-100 text-gray-600 hover:bg-blue-50 hover:text-blue-600 shadow-gray-200"
                           }`}
+                          title={isInCompare(bodyType.id) ? "Remove from comparison" : "Add to comparison"}
                         >
-                          <Compare size={16} />
+                          <Compare size={18} />
                         </button>
                       </div>
 
@@ -701,6 +788,8 @@ export default function BodyTypes() {
                           <div className="font-semibold">{bodyType.category}</div>
                         </div>
                       </div>
+
+                      <div className="flex items-center justify-between"></div>
 
                       <div className="flex items-center justify-between">
                         <div className="flex space-x-2">
@@ -743,6 +832,282 @@ export default function BodyTypes() {
               </button>
             </div>
           )}
+        </div>
+      </section>
+
+      {/* Available Trucks Section */}
+      <section className="py-16 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+              className="text-center mb-12"
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Used Trucks</h2>
+              <p className="text-xl text-gray-600 mb-8">
+                Browse our current selection of used commercial vehicles ready for immediate delivery or custom
+                body fitting.
+              </p>
+            </motion.div>
+
+            {/* Used Trucks */}
+            <div>
+              <div className="flex items-center justify-between mb-8">
+                <h3 className="text-2xl font-bold text-gray-900">Used Trucks</h3>
+                <Link href="/contact" className="text-black hover:text-gray-600 transition-colors font-medium">
+                  View All Used Trucks →
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* Used Truck 1 */}
+                <motion.div
+                  className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5 }}
+                >
+                  <div className="relative h-48">
+                    <span className="absolute top-4 left-4 z-10 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                      USED
+                    </span>
+                    <span className="absolute top-4 right-4 z-10 bg-red-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                      REDUCED
+                    </span>
+                    <Image
+                      src="/images/curtain-side-body-fineline.jpeg"
+                      alt="Used Scania R450"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-xl font-bold mb-2">Curtainside Body</h4>
+                    <p className="text-gray-600 mb-4">
+                      Complete curtainside truck in excellent condition. Full service history.
+                    </p>
+                    <div className="flex space-x-2">
+                      <Link
+                        href="/contact"
+                        className="flex-1 bg-black text-white text-center py-2 rounded font-medium hover:bg-gray-800 transition-colors"
+                      >
+                        View Details
+                      </Link>
+                      <button className="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors">
+                        <Phone size={16} />
+                      </button>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Used Truck 2 */}
+                <motion.div
+                  className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.1 }}
+                >
+                  <div className="relative h-48">
+                    <span className="absolute top-4 left-4 z-10 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                      USED
+                    </span>
+                    <Image
+                      src="/images/furniture-removal-van.png"
+                      alt="Used Iveco Eurocargo"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-xl font-bold mb-2">Furniture Removal Van </h4>
+                    <p className="text-gray-600 mb-4">
+                      Reliable removal van. Perfect for delivery operations.
+                    </p>
+                    <div className="flex space-x-2">
+                      <Link
+                        href="/contact"
+                        className="flex-1 bg-black text-white text-center py-2 rounded font-medium hover:bg-gray-800 transition-colors"
+                      >
+                        View Details
+                      </Link>
+                      <button className="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors">
+                        <Phone size={16} />
+                      </button>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* Used Truck 3 */}
+                <motion.div
+                  className="bg-white border border-gray-200 rounded-xl overflow-hidden hover:shadow-lg transition-all duration-300"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.2 }}
+                >
+                  <div className="relative h-48">
+                    <span className="absolute top-4 left-4 z-10 bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-bold">
+                      USED
+                    </span>
+                    <Image
+                      src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.35.45%20AM%20%281%29-Zv6yj6Y5yXpyrbq3FhHdOYrHxl4otw.jpeg"
+                      alt="Used MAN TGX with Crane"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  <div className="p-6">
+                    <h4 className="text-xl font-bold mb-2">Builders Merchant</h4>
+                    <p className="text-gray-600 mb-4">Complete crane truck ready for builders merchant operations.</p>
+                    <div className="flex space-x-2">
+                      <Link
+                        href="/contact"
+                        className="flex-1 bg-black text-white text-center py-2 rounded font-medium hover:bg-gray-800 transition-colors"
+                      >
+                        View Details
+                      </Link>
+                      <button className="px-4 py-2 border border-gray-300 rounded hover:bg-gray-50 transition-colors">
+                        <Phone size={16} />
+                      </button>
+                    </div>
+                  </div>
+                </motion.div>
+              </div>
+            </div>
+
+            {/* Stock Update Notice */}
+            <motion.div
+              className="mt-12 bg-gray-50 border border-gray-200 rounded-xl p-8 text-center"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h4 className="text-xl font-bold mb-4">Looking for Something Specific?</h4>
+              <p className="text-gray-600 mb-6">
+                Our stock changes regularly. If you don't see what you're looking for, get in touch - we can source
+                almost any commercial vehicle to meet your requirements.
+              </p>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <Link
+                  href="/contact"
+                  className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors flex items-center justify-center"
+                >
+                  Request Stock Alert
+                  <Mail size={16} className="ml-2" />
+                </Link>
+                <a
+                  href="tel:07340590412"
+                  className="border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors flex items-center justify-center"
+                >
+                  Call for Availability
+                  <Phone size={16} className="ml-2" />
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
+      {/* New and Used Bodies Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">New & Used Bodies Available</h2>
+              <p className="text-xl text-gray-600 mb-8">
+                Whether you're looking for a brand new custom-built body or a quality used option, we've got you
+                covered. Our extensive network and years of experience mean we can source exactly what you need.
+              </p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+                <div className="bg-white p-8 rounded-xl shadow-lg">
+                  <div className="w-16 h-16 bg-black rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Settings size={24} className="text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-4">New Bodies</h3>
+                  <p className="text-gray-600 mb-4">
+                    Custom-built to your exact specifications with the latest materials and technology. Full warranty
+                    and after-sales support included.
+                  </p>
+                  <ul className="text-sm text-gray-600 space-y-2">
+                    <li className="flex items-center">
+                      <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                      Bespoke design and build
+                    </li>
+                    <li className="flex items-center">
+                      <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                      Latest materials and techniques
+                    </li>
+                    <li className="flex items-center">
+                      <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
+                      Full warranty coverage
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="bg-white p-8 rounded-xl shadow-lg">
+                  <div className="w-16 h-16 bg-gray-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Truck size={24} className="text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold mb-4">Used Bodies</h3>
+                  <p className="text-gray-600 mb-4">
+                    Quality pre-owned bodies that have been thoroughly inspected and refurbished where necessary. Great
+                    value without compromising on reliability.
+                  </p>
+                  <ul className="text-sm text-gray-600 space-y-2">
+                    <li className="flex items-center">
+                      <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                      Thoroughly inspected
+                    </li>
+                    <li className="flex items-center">
+                      <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                      Refurbished to high standards
+                    </li>
+                    <li className="flex items-center">
+                      <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></div>
+                      Excellent value for money
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-black text-white p-8 rounded-xl">
+                <h3 className="text-2xl font-bold mb-4">Can't Find What You're Looking For?</h3>
+                <p className="text-gray-300 mb-6">
+                  Don't worry! With our extensive network and years of experience, we can source almost any type of
+                  commercial vehicle body. Whether it's new, used, or something completely unique - just ask us and
+                  we'll do our best to help.
+                </p>
+                <div className="flex flex-col sm:flex-row justify-center gap-4">
+                  <Link
+                    href="/contact"
+                    className="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors flex items-center justify-center"
+                  >
+                    Ask About Availability
+                    <MessageSquare size={16} className="ml-2" />
+                  </Link>
+                  <a
+                    href="tel:07340590412"
+                    className="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-black transition-colors flex items-center justify-center"
+                  >
+                    Call Us Now
+                    <Phone size={16} className="ml-2" />
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          </div>
         </div>
       </section>
 
@@ -802,8 +1167,7 @@ export default function BodyTypes() {
                     strokeWidth="2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
-                    class="lucide lucide-chevron-right ml-2"
-                    __v0_r="0,31943,31949"
+                    className="lucide lucide-chevron-right ml-2"
                   >
                     <path d="m9 18 6-6-6-6"></path>
                   </svg>
@@ -1063,6 +1427,92 @@ export default function BodyTypes() {
                   </div>
                 )}
               </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+      {/* Image Gallery Modal */}
+      <AnimatePresence>
+        {showImageGallery && selectedGallery.length > 0 && (
+          <motion.div
+            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setShowImageGallery(false)}
+          >
+            <motion.div
+              className="relative max-w-4xl max-h-[90vh] w-full h-full flex items-center justify-center p-4"
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.9 }}
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Close Button */}
+              <button
+                onClick={() => setShowImageGallery(false)}
+                className="absolute top-4 right-4 z-10 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors"
+              >
+                <X size={24} />
+              </button>
+
+              {/* Previous Button */}
+              {selectedGallery.length > 1 && (
+                <button
+                  onClick={prevImage}
+                  className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-colors"
+                >
+                  <ChevronRight size={24} className="rotate-180" />
+                </button>
+              )}
+
+              {/* Next Button */}
+              {selectedGallery.length > 1 && (
+                <button
+                  onClick={nextImage}
+                  className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-colors"
+                >
+                  <ChevronRight size={24} />
+                </button>
+              )}
+
+              {/* Main Image */}
+              <div className="relative w-full h-full flex items-center justify-center">
+                <img
+                  src={selectedGallery[currentImageIndex] || "/placeholder.svg?height=600&width=800&text=Gallery+Image"}
+                  alt={`Gallery image ${currentImageIndex + 1}`}
+                  className="max-w-full max-h-full object-contain rounded-lg"
+                  style={{ maxWidth: "90vw", maxHeight: "70vh" }}
+                />
+              </div>
+
+              {/* Image Counter */}
+              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/70 text-white px-4 py-2 rounded-full">
+                {currentImageIndex + 1} / {selectedGallery.length}
+              </div>
+
+              {/* Thumbnail Strip */}
+              {selectedGallery.length > 1 && (
+                <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex space-x-2 max-w-full overflow-x-auto">
+                  {selectedGallery.map((image, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setCurrentImageIndex(index)}
+                      className={`relative w-16 h-12 rounded overflow-hidden border-2 transition-all ${
+                        index === currentImageIndex ? "border-white" : "border-transparent opacity-70 hover:opacity-100"
+                      }`}
+                    >
+                      <Image
+                        src={image || "/placeholder.svg"}
+                        alt={`Thumbnail ${index + 1}`}
+                        fill
+                        className="object-cover"
+                      />
+                    </button>
+                  ))}
+                </div>
+              )}
             </motion.div>
           </motion.div>
         )}

@@ -497,201 +497,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Why Choose Us Section */}
-        <section className="py-20 bg-black text-white" aria-labelledby="why-choose-heading">
-          <div className="container mx-auto px-4">
-            <motion.div
-              className="text-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 id="why-choose-heading" className="text-3xl md:text-4xl font-bold mb-4">
-                What Sets Us Apart?
-              </h2>
-              <p className="text-gray-300 max-w-2xl mx-auto">
-                We don't just meet industry standards—we set them. Here's why leading companies trust us with their most
-                critical assets.
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: <Shield size={32} />,
-                  title: "2 Week Guarantee",
-                  description:
-                    "We guarantee expert custom vehicle bodies in 2 weeks—fast, reliable craftsmanship designed to keep your business moving smoothly.",
-                },
-                {
-                  icon: <Zap size={32} />,
-                  title: "24 Hour Response",
-                  description:
-                    "We pride ourselves on responding to all inquiries within 24 hours, ensuring you get timely answers and seamless communication.",
-                },
-                {
-                  icon: <Award size={32} />,
-                  title: "Bespoke Designs",
-                  description:
-                    "Our bespoke designs are uniquely crafted to fit your exact needs, delivering personalized, high-quality vehicle bodies that stand out.",
-                },
-                {
-                  icon: <Users size={32} />,
-                  title: "Dedicated Business Manager",
-                  description:
-                    "Your personal expert who knows your business inside out—from initial consultation to after-sales support.",
-                },
-                {
-                  icon: <Settings size={32} />,
-                  title: "Cutting-Edge Technology",
-                  description:
-                    "We use advanced technology and precision tools to create bespoke truck bodies, ensuring quality, efficiency, and perfect fits.",
-                },
-                {
-                  icon: <CheckCircle size={32} />,
-                  title: "100% British Made",
-                  description:
-                    "Proudly manufactured in Britain using premium materials and supporting local supply chains.",
-                },
-              ].map((feature, index) => (
-                <motion.div
-                  key={index}
-                  className="text-center p-6 bg-white/5 rounded-lg border border-white/10"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                >
-                  <div className="bg-white/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <div className="text-white">{feature.icon}</div>
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                  <p className="text-gray-300">{feature.description}</p>
-                </motion.div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Product Categories */}
-        <section className="py-20 bg-white" aria-labelledby="products-heading">
-          <div className="container mx-auto px-4">
-            <motion.div
-              className="text-center mb-16"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 id="products-heading" className="text-3xl md:text-4xl font-bold mb-4">
-                Our Product Range
-              </h2>
-              <p className="text-gray-600 max-w-2xl mx-auto">
-                Explore our comprehensive range of commercial vehicle body solutions designed for various industries and
-                applications.
-              </p>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {[
-                {
-                  title: "Dropside Bodies",
-                  description: "Versatile bodies with fold-down sides for easy loading and unloading.",
-                  image: "/images/dropside-body.jpeg",
-                  link: "/body-types/dropside",
-                  features: ["Easy side access", "Robust construction", "Quick-release mechanisms"],
-                },
-                {
-                  title: "Furniture Vans",
-                  description: "Specialized bodies designed for safe furniture and household goods transportation.",
-                  image: "/images/furniture-van.jpeg",
-                  link: "/body-types/furniture-van",
-                  features: ["Padded interior", "Load restraint systems", "Easy access doors"],
-                },
-                {
-                  title: "Box Van Bodies",
-                  description: "Secure enclosed storage solutions for valuable cargo transportation.",
-                  image: "/images/box-van-body.jpeg",
-                  link: "/body-types/box-van",
-                  features: ["Weather protection", "Secure storage", "Multiple door options"],
-                },
-                {
-                  title: "Curtainside Bodies",
-                  description: "Flexible side-access bodies with sliding curtains for easy loading.",
-                  image: "/images/curtainside-body.jpeg",
-                  link: "/body-types/curtainside",
-                  features: ["Full side access", "Forklift compatible", "Weather protection"],
-                },
-                {
-                  title: "Bespoke Designs",
-                  description: "Custom-designed bodies tailored to your specific requirements.",
-                  image: "/images/bespoke-design.jpeg",
-                  link: "/body-types/bespoke",
-                  features: ["Tailored design", "Unique solutions", "Full design service"],
-                },
-              ].map((product, index) => (
-                <motion.article
-                  key={index}
-                  className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow group"
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                >
-                  <div className="relative h-48 overflow-hidden">
-                    <Image
-                      src={product.image || "/placeholder.svg"}
-                      alt={`${product.title} - Commercial vehicle body solution by FineLine Bodies`}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold mb-2">{product.title}</h3>
-                    <p className="text-gray-600 mb-4">{product.description}</p>
-
-                    {/* Key Features */}
-                    <ul className="mb-4 space-y-1">
-                      {product.features.map((feature, featureIndex) => (
-                        <li key={featureIndex} className="flex items-center text-sm text-gray-600">
-                          <CheckCircle size={14} className="mr-2 text-black" aria-hidden="true" />
-                          {feature}
-                        </li>
-                      ))}
-                    </ul>
-
-                    <Link
-                      href={product.link}
-                      className="inline-flex items-center text-black font-medium hover:underline focus:outline-none focus:underline"
-                      aria-label={`Learn more about ${product.title}`}
-                    >
-                      View Details
-                      <ChevronRight size={16} className="ml-1" aria-hidden="true" />
-                    </Link>
-                  </div>
-                </motion.article>
-              ))}
-            </div>
-
-            {/* View All Products CTA */}
-            <motion.div
-              className="text-center mt-12"
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <Link
-                href="/body-types"
-                className="bg-black text-white px-8 py-3 rounded font-medium hover:bg-gray-800 transition-colors focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
-                aria-label="View all commercial vehicle body types"
-              >
-                View All Body Types
-              </Link>
-            </motion.div>
-          </div>
-        </section>
 
         {/* Featured Product */}
         <section className="py-20 bg-gray-50" aria-labelledby="featured-heading">
@@ -704,13 +510,12 @@ export default function Home() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
               >
-                <div className="relative z-10">
+                <div className="relative z-10 h-96 w-full">
                   <Image
                     src="/images/fineline-home-hero.jpeg"
                     alt="FineLine Bodies featured product - Professional commercial vehicle body showcasing quality craftsmanship and innovative design"
-                    width={800}
-                    height={600}
-                    className="rounded shadow-xl"
+                    fill
+                    className="rounded shadow-xl object-cover"
                   />
                   <div className="absolute top-4 left-4 bg-black text-white px-4 py-2 rounded text-sm font-bold">
                     FEATURED
@@ -797,6 +602,255 @@ export default function Home() {
                   </Link>
                 </div>
               </motion.div>
+            </div>
+
+            {/* Popular Product */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20">
+              <motion.div
+                className="relative"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <div className="relative z-10 h-96 w-full">
+                  <Image
+                    src="/images/curtain-side-body-fineline.jpeg"
+                    alt="Popular Curtainside Body - Most requested commercial vehicle body solution by FineLine Bodies"
+                    fill
+                    className="rounded shadow-xl object-cover"
+                  />
+                  <div className="absolute top-4 left-4 bg-blue-600 text-white px-4 py-2 rounded text-sm font-bold">
+                    POPULAR
+                  </div>
+                </div>
+              </motion.div>
+
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">Most Popular: Professional Curtainside Body</h2>
+                <p className="text-gray-600 mb-6">
+                  Our most requested solution, the Professional Curtainside Body offers unmatched versatility with
+                  sliding curtains for easy side access loading. Perfect for palletized goods, retail distribution, and
+                  general freight applications.
+                </p>
+
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="flex items-start">
+                    <CheckCircle size={20} className="text-black mr-2 mt-1" aria-hidden="true" />
+                    <div>
+                      <h4 className="font-bold text-sm">Sliding Curtains</h4>
+                      <p className="text-sm text-gray-600">Full side access loading</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle size={20} className="text-black mr-2 mt-1" aria-hidden="true" />
+                    <div>
+                      <h4 className="font-bold text-sm">Forklift Compatible</h4>
+                      <p className="text-sm text-gray-600">Easy loading from the side</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle size={20} className="text-black mr-2 mt-1" aria-hidden="true" />
+                    <div>
+                      <h4 className="font-bold text-sm">Weather Protection</h4>
+                      <p className="text-sm text-gray-600">Secure curtain system</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle size={20} className="text-black mr-2 mt-1" aria-hidden="true" />
+                    <div>
+                      <h4 className="font-bold text-sm">Weather Resistant</h4>
+                      <p className="text-sm text-gray-600">Durable frame construction</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link
+                    href="/body-types/curtainside"
+                    className="bg-black text-white px-6 py-3 rounded font-medium hover:bg-gray-800 transition-colors flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+                    aria-label="View detailed specifications for Curtainside Body"
+                  >
+                    View Specifications
+                    <ChevronRight size={16} className="ml-2" aria-hidden="true" />
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="border-2 border-black text-black px-6 py-3 rounded font-medium hover:bg-black hover:text-white transition-colors flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+                    aria-label="Request a quote for Curtainside Body"
+                  >
+                    Request a Quote
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Our Pick Product */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mt-20">
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <h2 className="text-3xl md:text-4xl font-bold mb-6">Our Pick: Premium Box Van Body</h2>
+                <p className="text-gray-600 mb-6">
+                  Hand-picked by our experts, this Premium Box Van Body represents the perfect balance of security,
+                  functionality, and value. Ideal for courier services, retail deliveries, and secure cargo
+                  transportation.
+                </p>
+
+                <div className="grid grid-cols-2 gap-4 mb-8">
+                  <div className="flex items-start">
+                    <CheckCircle size={20} className="text-black mr-2 mt-1" aria-hidden="true" />
+                    <div>
+                      <h4 className="font-bold text-sm">Secure Locking</h4>
+                      <p className="text-sm text-gray-600">Multi-point security system</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle size={20} className="text-black mr-2 mt-1" aria-hidden="true" />
+                    <div>
+                      <h4 className="font-bold text-sm">Insulated Walls</h4>
+                      <p className="text-sm text-gray-600">Temperature protection</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle size={20} className="text-black mr-2 mt-1" aria-hidden="true" />
+                    <div>
+                      <h4 className="font-bold text-sm">LED Interior Lighting</h4>
+                      <p className="text-sm text-gray-600">Enhanced visibility</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start">
+                    <CheckCircle size={20} className="text-black mr-2 mt-1" aria-hidden="true" />
+                    <div>
+                      <h4 className="font-bold text-sm">Load Restraint Rails</h4>
+                      <p className="text-sm text-gray-600">Secure cargo positioning</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link
+                    href="/body-types/box-van"
+                    className="bg-black text-white px-6 py-3 rounded font-medium hover:bg-gray-800 transition-colors flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+                    aria-label="View detailed specifications for Box Van Body"
+                  >
+                    View Specifications
+                    <ChevronRight size={16} className="ml-2" aria-hidden="true" />
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="border-2 border-black text-black px-6 py-3 rounded font-medium hover:bg-black hover:text-white transition-colors flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-black focus:ring-offset-2"
+                    aria-label="Request a quote for Box Van Body"
+                  >
+                    Request a Quote
+                  </Link>
+                </div>
+              </motion.div>
+
+              <motion.div
+                className="relative"
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6 }}
+              >
+                <div className="relative z-10 h-96 w-full">
+                  <Image
+                    src="/images/box-van-body.jpeg"
+                    alt="Our Pick Box Van Body - Expert recommended commercial vehicle body solution by FineLine Bodies"
+                    fill
+                    className="rounded shadow-xl object-cover"
+                  />
+                  <div className="absolute top-4 left-4 bg-green-600 text-white px-4 py-2 rounded text-sm font-bold">
+                    OUR PICK
+                  </div>
+                </div>
+              </motion.div>
+            </div>
+          </div>
+        </section>
+
+        {/* Why Choose Us Section */}
+        <section className="py-20 bg-black text-white" aria-labelledby="why-choose-heading">
+          <div className="container mx-auto px-4">
+            <motion.div
+              className="text-center mb-16"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <h2 id="why-choose-heading" className="text-3xl md:text-4xl font-bold mb-4">
+                What Sets Us Apart?
+              </h2>
+              <p className="text-gray-300 max-w-2xl mx-auto">
+                We don't just meet industry standards—we set them. Here's why leading companies trust us with their most
+                critical assets.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                {
+                  icon: <Shield size={32} />,
+                  title: "2 Week Guarantee",
+                  description:
+                    "We guarantee expert custom vehicle bodies in 2 weeks—fast, reliable craftsmanship designed to keep your business moving smoothly.",
+                },
+                {
+                  icon: <Zap size={32} />,
+                  title: "24 Hour Response",
+                  description:
+                    "We pride ourselves on responding to all inquiries within 24 hours, ensuring you get timely answers and seamless communication.",
+                },
+                {
+                  icon: <Award size={32} />,
+                  title: "Bespoke Designs",
+                  description:
+                    "Our bespoke designs are uniquely crafted to fit your exact needs, delivering personalized, high-quality vehicle bodies that stand out.",
+                },
+                {
+                  icon: <Users size={32} />,
+                  title: "Dedicated Business Manager",
+                  description:
+                    "Your personal expert who knows your business inside out—from initial consultation to after-sales support.",
+                },
+                {
+                  icon: <Settings size={32} />,
+                  title: "Cutting-Edge Technology",
+                  description:
+                    "We use advanced technology and precision tools to create bespoke truck bodies, ensuring quality, efficiency, and perfect fits.",
+                },
+                {
+                  icon: <CheckCircle size={32} />,
+                  title: "100% British Made",
+                  description:
+                    "Proudly manufactured in Britain using premium materials and supporting local supply chains.",
+                },
+              ].map((feature, index) => (
+                <motion.div
+                  key={index}
+                  className="text-center p-6 bg-white/5 rounded-lg border border-white/10"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                >
+                  <div className="bg-white/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <div className="text-white">{feature.icon}</div>
+                  </div>
+                  <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
+                  <p className="text-gray-300">{feature.description}</p>
+                </motion.div>
+              ))}
             </div>
           </div>
         </section>

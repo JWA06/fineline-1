@@ -383,6 +383,27 @@ export default function AfterCare() {
                   </div>
                 </div>
               </motion.div>
+
+              <motion.div
+                className="relative h-64 rounded-xl overflow-hidden shadow-lg"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3 }}
+              >
+                <Image
+                  src="/images/tail-lift-fineline.jpeg"
+                  alt="Professional tail lift installation showing aluminum platform with hydraulic mechanisms"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-black/30 flex items-end">
+                  <div className="p-4 text-white">
+                    <h3 className="text-lg font-bold">Tail Lift Fitment</h3>
+                    <p className="text-sm">Professional installation and maintenance</p>
+                  </div>
+                </div>
+              </motion.div>
             </div>
           </div>
         </section>
