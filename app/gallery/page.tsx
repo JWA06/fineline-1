@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
@@ -9,88 +9,158 @@ import { Phone, Mail, Menu, X } from "lucide-react"
 const galleryItems = [
   {
     id: 1,
-    title: "Custom Dropside Body",
     image: "/images/dropside-fineline.jpeg",
+    description: "Custom Dropside Body",
+  },
+  {
+    id: 2,
+    image: "/images/box-van-fineline.jpeg",
+    description: "Box Van Body",
+  },
+  {
+    id: 3,
+    image: "/images/furniture-van.jpeg",
+    description: "Furniture Van Body",
   },
   {
     id: 4,
-    title: "Tipper Body Solution",
-    image: "/images/tipper-body.png",
+    image: "/images/fineline-home-hero.jpeg",
+    description: "Home Hero Project",
+  },
+  {
+    id: 5,
+    image: "/images/fineline-home-hero-2.jpeg",
+    description: "Custom Truck Body",
+  },
+  {
+    id: 6,
+    image: "/images/bespoke-design.jpeg",
+    description: "Bespoke Design",
   },
   {
     id: 7,
-    title: "Box Van Body",
-    image: "/images/box-van-fineline.jpeg",
+    image: "/images/overview-image.jpeg",
+    description: "Overview Project",
+  },
+  {
+    id: 8,
+    image: "/images/builders-merchant-fineline.jpeg",
+    description: "Builders Merchant Body with Crane",
+  },
+  {
+    id: 9,
+    image: "/images/curtain-sider-moffett-fineline.jpeg",
+    description: "Curtain Sider with Moffett Forklift",
   },
   {
     id: 10,
-    title: "Curtainside Body",
-    image: "/images/curtainside-body.jpeg",
+    image: "/images/5-door-furniture-removal-fineline.jpeg",
+    description: "5 Door Furniture Removal Van",
+  },
+  {
+    id: 11,
+    image: "/images/storage-van-interior.jpeg",
+    description: "Custom Storage Van Interior",
+  },
+  {
+    id: 12,
+    image: "/images/compartment-storage-system.jpeg",
+    description: "Professional Compartment Storage System",
+  },
+  {
+    id: 13,
+    image: "/images/mercedes-box-van.jpeg",
+    description: "Mercedes Commercial Box Van",
+  },
+  {
+    id: 14,
+    image: "/images/highway-maintenance-rear.jpeg",
+    description: "Highway Maintenance Vehicle",
+  },
+  {
+    id: 15,
+    image: "/images/m9-hdd-truck-rear.jpeg",
+    description: "M9 HDD Specialized Utility Truck",
   },
   {
     id: 16,
-    title: "Flatbed Body",
-    image: "/images/flatbed-body.png",
+    image: "/images/m9-hdd-truck-side.jpeg",
+    description: "M9 HDD Professional Branding",
+  },
+  {
+    id: 17,
+    image: "/images/tail-lift-fineline.jpeg",
+    description: "Tail Lift Fitment",
+  },
+  {
+    id: 18,
+    image: "/images/box-van-daf-cf.jpeg",
+    description: "DAF CF Box Van Body",
+  },
+  {
+    id: 19,
+    image: "/images/refrigerated-body.jpeg",
+    description: "Refrigerated Body",
+  },
+  {
+    id: 20,
+    image: "/images/curtain-sider-open.jpeg",
+    description: "Curtain Sider Open",
+  },
+  {
+    id: 21,
+    image: "/images/fineline-crane-operation.jpeg",
+    description: "Crane Operation",
   },
   {
     id: 22,
-    title: "Bespoke Solution",
-    image: "/images/bespoke-solutions.jpeg",
+    image: "/images/moffett-tail-lift-body.jpeg",
+    description: "Moffett Tail Lift Body",
+  },
+  {
+    id: 24,
+    image: "/images/furniture-van-interior-1.jpeg",
+    description: "Furniture Van Interior with Wooden Slats",
   },
   {
     id: 25,
-    title: "Furniture Van Body",
-    image: "/images/furniture-van.jpeg",
+    image: "/images/utility-truck-side-view.jpeg",
+    description: "Multi-Compartment Utility Truck",
   },
   {
     id: 26,
-    title: "FineLine Example Build",
-    image: "/images/fineline-example.jpeg",
+    image: "/images/furniture-van-interior-2.jpeg",
+    description: "Professional Furniture Van Interior",
   },
   {
     id: 27,
-    title: "Home Hero Project",
-    image: "/images/fineline-home-hero.jpeg",
+    image: "/images/van-interior-mixed-storage.jpeg",
+    description: "Mixed Storage Van Interior with Roller Shutters",
   },
   {
-    id: 30,
-    title: "Custom Truck Body",
-    image: "/images/fineline-home-hero-2.jpeg",
+    id: 28,
+    image: "/images/commercial-truck-exterior.jpeg",
+    description: "Large Commercial Truck with Multiple Compartments",
   },
   {
-    id: 31,
-    title: "Bespoke Design",
-    image: "/images/bespoke-design.jpeg",
+    id: 29,
+    image: "/images/truck-rear-tail-lift.jpeg",
+    description: "Truck Rear View with Tail Lift System",
   },
-  {
-    id: 32,
-    title: "Overview Project",
-    image: "/images/overview-image.jpeg",
-  },
-  {
-    id: 35,
-    title: "Professional Furniture Removal Van",
-    image: "/images/furniture-removal-van.png",
-  },
-  {
-    id: 36,
-    title: "Builders Merchant Body with Crane",
-    image: "/images/builders-merchant-fineline.jpeg",
-  },
-  {
-    id: 37,
-    title: "Curtain Sider with Moffett Forklift",
-    image: "/images/curtain-sider-moffett-fineline.jpeg",
-  },
-  {
-    id: 38,
-    title: "5 Door Furniture Removal Van",
-    image: "/images/5-door-furniture-removal-fineline.jpeg",
-  },
-]
+].filter((item) => {
+  // Filter out any potentially animated image formats
+  const imageExtension = item.image.split(".").pop()?.toLowerCase()
+  const staticFormats = ["jpg", "jpeg"]
+  return staticFormats.includes(imageExtension || "")
+})
 
 export default function GalleryPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+
+  useEffect(() => {
+    console.log("Static Gallery Items:", galleryItems)
+    console.log("Total static images:", galleryItems.length)
+  }, [])
 
   return (
     <div className="min-h-screen bg-white">
@@ -239,6 +309,7 @@ export default function GalleryPage() {
           <p className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
             See our craftsmanship in action - a showcase of custom truck body solutions built with precision and care.
           </p>
+          <div className="mt-4 text-sm text-gray-400">Displaying {galleryItems.length} static images</div>
         </div>
       </section>
 
@@ -253,16 +324,12 @@ export default function GalleryPage() {
               >
                 <Image
                   src={item.image || "/placeholder.svg"}
-                  alt={item.title}
+                  alt={item.description}
                   width={400}
                   height={300}
                   className="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300 flex items-end">
-                  <div className="p-4 text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <h3 className="font-semibold text-sm">{item.title}</h3>
-                  </div>
-                </div>
+                <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-40 transition-all duration-300"></div>
               </div>
             ))}
           </div>

@@ -27,9 +27,9 @@ const bodyTypes = [
     description: "Versatile enclosed bodies ideal for general cargo and goods transportation.",
     detailedDescription:
       "Our box van bodies offer secure, weatherproof storage solutions perfect for delivery services, retail distribution, and general cargo transport. Built with lightweight yet durable materials.",
-    image: "/images/box-van-fineline.jpeg",
+    image: "/images/box-van-daf-cf.jpeg",
     gallery: [
-      "/images/box-van-fineline.jpeg",
+      "/images/box-van-daf-cf.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.01.17%20AM-ehrMI3aZA7EYtQUbwoZG0c6VfkA1O0.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.01.17%20AM%20%281%29-V44F3n9ju21hlgA1TLlDCfwCycWBY5.jpeg",
     ],
@@ -152,8 +152,11 @@ const bodyTypes = [
       "Advanced curtain sider bodies with integrated Moffett forklift systems for independent loading operations.",
     detailedDescription:
       "Specialized curtain sider bodies featuring integrated Moffett truck-mounted forklift systems. Perfect for businesses requiring independent loading and unloading capabilities at locations without dock facilities. Combines the flexibility of side access with the convenience of onboard material handling equipment.",
-    image: "/images/curtain-sider-moffett-fineline.jpeg",
-    gallery: ["/images/curtain-sider-moffett-fineline.jpeg"],
+    image: "/images/moffett-tail-lift-body.jpeg",
+    gallery: [
+      "/images/moffett-rear-view.jpeg",
+      "/images/curtain-sider-open.jpeg",
+    ],
     features: [
       "Integrated Moffett forklift",
       "Full side curtain access",
@@ -194,8 +197,13 @@ const bodyTypes = [
     description: "Custom-designed bodies tailored to specific business requirements.",
     detailedDescription:
       "When standard solutions don't fit, we create bespoke bodies designed specifically for your unique requirements. From concept to completion, we deliver exactly what you need.",
-    image: "/images/bespoke-solutions.jpeg",
-    gallery: ["/images/bespoke-1.jpg", "/images/bespoke-2.jpg", "/images/bespoke-3.jpg"],
+    image: "/images/fineline-crane-operation.jpeg",
+    gallery: [
+      "/images/fineline-crane-operation.jpeg",
+      "/images/bespoke-1.jpg",
+      "/images/bespoke-2.jpg",
+      "/images/bespoke-3.jpg",
+    ],
     features: ["Tailored to your needs", "Unique solutions", "Optimized for your business", "Full design service"],
     applications: ["Specialized transport", "Mobile workshops", "Emergency services", "Unique requirements"],
     testimonial: {
@@ -848,8 +856,8 @@ export default function BodyTypes() {
             >
               <h2 className="text-3xl md:text-4xl font-bold mb-6">Used Trucks</h2>
               <p className="text-xl text-gray-600 mb-8">
-                Browse our current selection of used commercial vehicles ready for immediate delivery or custom
-                body fitting.
+                Browse our current selection of used commercial vehicles ready for immediate delivery or custom body
+                fitting.
               </p>
             </motion.div>
 
@@ -925,9 +933,7 @@ export default function BodyTypes() {
                   </div>
                   <div className="p-6">
                     <h4 className="text-xl font-bold mb-2">Furniture Removal Van </h4>
-                    <p className="text-gray-600 mb-4">
-                      Reliable removal van. Perfect for delivery operations.
-                    </p>
+                    <p className="text-gray-600 mb-4">Reliable removal van. Perfect for delivery operations.</p>
                     <div className="flex space-x-2">
                       <Link
                         href="/contact"

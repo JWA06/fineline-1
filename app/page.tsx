@@ -764,8 +764,8 @@ export default function Home() {
               >
                 <div className="relative z-10 h-96 w-full">
                   <Image
-                    src="/images/box-van-fineline.jpeg"
-                    alt="Our Pick Box Van Body - Expert recommended commercial vehicle body solution by FineLine Bodies"
+                    src="/images/box-van-daf-cf.jpeg"
+                    alt="Our Pick Box Van Body - Professional DAF CF 320 with premium box body by FineLine Bodies"
                     fill
                     className="rounded shadow-xl object-cover"
                   />
@@ -1080,89 +1080,109 @@ export default function Home() {
                   </div>
                 </Link>
                 <p className="text-gray-400 mb-6">Custom truck body solutions crafted with precision and expertise.</p>
+                <div className="flex space-x-4">
+                  {socialLinks.map((link) => (
+                    <a
+                      key={link.name}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-gray-400 hover:text-white transition-colors"
+                      aria-label={`Follow us on ${link.name}`}
+                    >
+                      {link.icon}
+                    </a>
+                  ))}
+                </div>
               </div>
 
               <div>
-                <h3 className="text-lg font-bold mb-6">Quick Links</h3>
-                <ul className="space-y-3">
-                  {["Home", "Body Types", "Gallery", "About", "Contact", "After Care", "Blog"].map((item) => (
-                    <li key={item}>
-                      <Link
-                        href={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "-")}`}
-                        className="text-gray-400 hover:text-white transition-colors"
-                        aria-current={item === "Contact" ? "page" : undefined}
-                      >
-                        {item}
-                      </Link>
-                    </li>
-                  ))}
+                <h4 className="text-lg font-bold mb-4">Quick Links</h4>
+                <ul className="space-y-2">
+                  <li>
+                    <Link href="/" className="text-gray-400 hover:text-white transition-colors">
+                      Home
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/body-types" className="text-gray-400 hover:text-white transition-colors">
+                      Body Types
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/gallery" className="text-gray-400 hover:text-white transition-colors">
+                      Gallery
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
+                      About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+                      Contact Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/after-care" className="text-gray-400 hover:text-white transition-colors">
+                      After Care
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
+                      Blog
+                    </Link>
+                  </li>
                 </ul>
               </div>
 
               <div>
-                <h3 className="text-lg font-bold mb-6">Services</h3>
-                <ul className="space-y-3">
-                  {[
-                    "Custom Truck Bodies",
-                    "Repairs & Maintenance",
-                    "Modifications",
-                    "Consultations",
-                    "After Sales Support",
-                  ].map((item) => (
-                    <li key={item}>
-                      <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                        {item}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
+                <h4 className="text-lg font-bold mb-4">Contact Information</h4>
+                <p className="text-gray-400 mb-2">FineLine Bodies Limited</p>
+                <p className="text-gray-400 mb-2">Meridian Centre, Wainwright Street</p>
+                <p className="text-gray-400 mb-2">Oldham, OL8 1EZ</p>
+                <div className="flex items-center mb-2">
+                  <Phone size={16} className="mr-2 text-gray-500" aria-hidden="true" />
+                  <a href="tel:07340590412" className="text-gray-400 hover:text-white transition-colors">
+                    07340590412
+                  </a>
+                </div>
+                <div className="flex items-center mb-2">
+                  <Mail size={16} className="mr-2 text-gray-500" aria-hidden="true" />
+                  <a
+                    href="mailto:finelinebodies@outlook.com"
+                    className="text-gray-400 hover:text-white transition-colors"
+                  >
+                    finelinebodies@outlook.com
+                  </a>
+                </div>
               </div>
 
               <div>
-                <h3 className="text-lg font-bold mb-6">Contact Info</h3>
-                <address className="not-italic text-gray-400 space-y-3">
-                  <p>Meridian Centre </p>
-                  <p>Wainwright Street</p>
-                  <p>Oldham, OL8 1EZ</p>
-                  <p className="pt-2">
-                    <a
-                      href="tel:01234567890"
-                      className="hover:text-white transition-colors flex items-center"
-                      aria-label="Call us at 01234 567 890"
-                    >
-                      <Phone size={14} className="mr-2" aria-hidden="true" />
-                      07340590412
-                    </a>
-                  </p>
-                  <p>
-                    <a
-                      href="mailto:info@finelinebodies.com"
-                      className="hover:text-white transition-colors flex items-center"
-                      aria-label="Email us at info@finelinebodies.com"
-                    >
-                      <Mail size={14} className="mr-2" aria-hidden="true" />
-                      finelinebodies@outlook.com
-                    </a>
-                  </p>
-                </address>
+                <h4 className="text-lg font-bold mb-4">Subscribe to Our Newsletter</h4>
+                <p className="text-gray-400 mb-4">
+                  Stay up-to-date with our latest news, product releases, and special offers.
+                </p>
+                <div className="flex">
+                  <input
+                    type="email"
+                    placeholder="Enter your email"
+                    className="bg-gray-800 text-gray-300 px-4 py-2 rounded-l focus:outline-none"
+                    aria-label="Email address"
+                  />
+                  <button
+                    className="bg-black hover:bg-gray-700 text-white px-4 py-2 rounded-r transition-colors"
+                    aria-label="Subscribe"
+                  >
+                    Subscribe
+                  </button>
+                </div>
               </div>
             </div>
 
-            <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-              <p className="text-gray-500 text-sm mb-4 md:mb-0">
-                &copy; {new Date().getFullYear()} jwa.services. All rights reserved.
-              </p>
-              <div className="flex space-x-6">
-                <Link href="/privacy-policy" className="text-gray-500 text-sm hover:text-white transition-colors">
-                  Privacy Policy
-                </Link>
-                <Link href="/terms-of-service" className="text-gray-500 text-sm hover:text-white transition-colors">
-                  Terms of Service
-                </Link>
-                <Link href="/cookie-policy" className="text-gray-500 text-sm hover:text-white transition-colors">
-                  Cookie Policy
-                </Link>
-              </div>
+            <div className="border-t border-gray-800 pt-8 text-center text-gray-500">
+              &copy; {new Date().getFullYear()} FineLine Bodies Ltd. All rights reserved.
             </div>
           </div>
         </footer>

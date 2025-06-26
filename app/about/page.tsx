@@ -68,6 +68,81 @@ const teamMembers = [
       linkedin: "https://linkedin.com/in/",
     },
   },
+  {
+    name: "Devon Bowes",
+    position: "Shop Floor Supervisor",
+    experience: "12+ years",
+    image: "/images/devon-bowes.jpeg",
+    bio: "Devon oversees daily operations on the shop floor, ensuring production schedules are met while maintaining our high safety and quality standards.",
+    achievements: [
+      "Implemented efficient workflow processes",
+      "Maintained 100% safety record for 2 years",
+      "Reduced production bottlenecks by 35%",
+    ],
+    socialMedia: {
+      linkedin: "https://linkedin.com/in/devonbowes",
+    },
+  },
+  {
+    name: "Dean Smith",
+    position: "Semi Skilled Body Builder & Electrician",
+    experience: "2+ years",
+    image: "/images/dean-smith.jpeg",
+    bio: "Dean is a highly skilled fabricator specializing in precision metalwork and custom body construction. His expertise in advanced welding techniques and attention to detail ensures every project meets our exacting standards.",
+    achievements: [
+      "Specialist in aluminum and stainless steel fabrication",
+      "Completed 300+ custom body builds",
+      "Mentor to junior fabricators and apprentices",
+    ],
+    socialMedia: {
+      linkedin: "https://linkedin.com/in/deansmith",
+    },
+  },
+  {
+    name: "Wade Fitton",
+    position: "Semi Skilled Body Builder",
+    experience: "2+ years",
+    image: "/images/wade.jpeg",
+    bio: "Wade is one of our promising apprentices, learning the craft of commercial vehicle body fabrication under the guidance of our experienced team. His enthusiasm and dedication to learning make him a valuable addition to our growing workforce.",
+    achievements: [
+      "Completed Level 2 Fabrication and Welding course",
+      "Assisted in 50+ body builds during apprenticeship",
+      "Recognized for outstanding progress and work ethic",
+    ],
+    socialMedia: {
+      linkedin: "https://linkedin.com/in/wadethompson",
+    },
+  },
+  {
+    name: "Alex Kelly",
+    position: "Semi Skilled Body Builder",
+    experience: "4+ years",
+    image: "/images/alex-kelly.jpeg",
+    bio: "Alex, known as 'Big Al' to the team, is one of our newest apprentices showing great promise in commercial vehicle body fabrication. His eagerness to learn and positive attitude make him a valued member of our growing team.",
+    achievements: [
+      "Currently completing Level 1 Fabrication course",
+      "Assisted in 25+ body builds during training",
+      "Recognized for exceptional teamwork and dedication",
+    ],
+    socialMedia: {
+      linkedin: "https://linkedin.com/in/alexkelly",
+    },
+  },
+  {
+    name: "Josh Logan",
+    position: "Semi Skilled Body Builder",
+    experience: "1+ years",
+    image: "/images/team-member-4.jpeg",
+    bio: "Michael is a highly experienced fabricator and certified welder who brings precision and expertise to every project. His attention to detail and commitment to quality ensures that every vehicle body meets our exacting standards.",
+    achievements: [
+      "Certified in MIG, TIG, and Arc welding techniques",
+      "Completed 200+ complex fabrication projects",
+      "Specialist in custom aluminum body construction",
+    ],
+    socialMedia: {
+      linkedin: "https://linkedin.com/in/michaelroberts",
+    },
+  },
 ]
 
 // Company values
@@ -407,7 +482,7 @@ export default function About() {
                   <div className="text-sm text-gray-600">Happy Clients</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-black">10+</div>
+                  <div className="text-3xl font-bold text-black">14+</div>
                   <div className="text-sm text-gray-600">Team Members</div>
                 </div>
               </motion.div>
@@ -635,11 +710,6 @@ export default function About() {
                         fill
                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-                        <div className="p-6 text-white">
-                          <p className="font-medium">View Profile</p>
-                        </div>
-                      </div>
                     </div>
                     <div className="p-6">
                       <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600 transition-colors">
