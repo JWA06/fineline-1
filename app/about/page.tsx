@@ -61,7 +61,7 @@ const teamMembers = [
     name: "Jemma Kelly",
     position: "Business Manager",
     experience: "18+ years",
-    image: "/images/fineline-logo.jpeg",
+    image: "/images/jemma-kelly-portrait.jpeg",
     bio: "Jemma leads our engineering team, ensuring every design meets the highest standards of quality and functionality.",
     achievements: ["Patented 3 design innovations", "Reduced production time by 25%"],
     socialMedia: {
@@ -719,6 +719,22 @@ export default function About() {
                       <div className="flex items-center text-sm text-gray-500">
                         <Clock size={14} className="mr-1" aria-hidden="true" />
                         {member.experience}
+                      </div>
+                      <div className="mt-3 text-xs text-gray-500 leading-relaxed">
+                        {member.name === "Dave Carnell" &&
+                          "Visionary leader with unmatched industry expertise and passion for excellence"}
+                        {member.name === "Jemma Kelly" &&
+                          "Strategic business operations specialist ensuring seamless company growth"}
+                        {member.name === "Devon Bowes" &&
+                          "Dev started in the industry at 16 and has over 15 years experience. Specialises in furniture builds, Making them bespoke to Fine Line Bodies"}
+                        {member.name === "Dean Smith" &&
+                          "Dean joined us over a year ago  and has fitted into the team well. Specialises in Electrics"}
+                        {member.name === "Wade Fitton" &&
+                          "Wade joined us just over 2 years ago as a body builder lad with a bit of guidance from the MD, Wade is now smashing It with his own bay and taking on some of our most challenging bespoke work"}
+                        {member.name === "Alex Kelly" &&
+                          "Our youngest semi skilled body builder at Fine Line. At just 15, he joined Dave and is now on his way to being fully skilled. Specialises in furniture builds, Electrics and Tail lift fitment"}
+                        {member.name === "Josh Logan" &&
+                          "Josh started with us Jan 25 and now has his own building space. He fitted in well with the team and is getting amazing at perfecting his builds"}
                       </div>
                     </div>
                   </div>
