@@ -69,7 +69,7 @@ const leadershipTeam = [
     },
   },
   {
-    name: "Johnny",
+    name: "Johnny Joyce",
     position: "General Manager",
     experience: "15+ years",
     image: "/images/fineline-logo.jpeg",
@@ -143,7 +143,7 @@ const teamMembers = [
   },
   {
     name: "Dean Smith",
-    position: "Semi skilled body builder and Electrican",
+    position: "Electrican",
     experience: "10+ years",
     image: "/images/dean-smith.jpeg",
     bio: "Dean joined us over a year ago and has fitted into the team well. Specialises in Electrics and precision metalwork construction.",
