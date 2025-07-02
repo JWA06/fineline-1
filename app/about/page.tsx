@@ -70,10 +70,10 @@ const leadershipTeam = [
   },
   {
     name: "Johnny",
-    position: "Production Manager",
+    position: "General Manager",
     experience: "15+ years",
-    image: "/images/team-member-4.jpeg",
-    bio: "Johnny oversees our production processes, ensuring quality standards are met while optimizing efficiency across all manufacturing operations.",
+    image: "/images/fineline-logo.jpeg",
+    bio: "Johnny oversees our management processes, ensuring quality standards are met while optimizing efficiency across all manufacturing operations.",
     achievements: [
       "Streamlined production workflows",
       "Reduced production time by 20%",
@@ -85,10 +85,10 @@ const leadershipTeam = [
   },
   {
     name: "Devon Bowes",
-    position: "Shop Floor Supervisor",
-    experience: "12+ years",
+    position: "Fully Skilled Body Builder / Shop Floor Supervisor",
+    experience: "15+ years",
     image: "/images/devon-bowes.jpeg",
-    bio: "Devon oversees daily operations on the shop floor, ensuring production schedules are met while maintaining our high safety and quality standards.",
+    bio: "Devon started in the industry at 16 and has over 15 years experience. Specialises in furniture builds, Making them bespoke to Fine Line Bodies.",
     achievements: [
       "Implemented efficient workflow processes",
       "Maintained 100% safety record for 2 years",
@@ -120,9 +120,9 @@ const teamMembers = [
   {
     name: "Josh Logan",
     position: "Semi Skilled Body Builder",
-    experience: "1+ years",
-    image: "/images/josh-logan.jpeg",
-    bio: "Josh started with us Jan 25 and now has his own building space. He fitted in well with the team and is getting amazing at perfecting his builds.",
+    experience: "9+ years",
+    image: "/images/team-member-4.jpeg",
+    bio: "Josh started with us Jan 25 and now has his own building space. He fitted in well with the team and is progressing brilliantly.",
     achievements: [
       "Completed Level 1 Fabrication course",
       "Assisted in 25+ body builds during training",
@@ -132,7 +132,7 @@ const teamMembers = [
   {
     name: "Wade Fitton",
     position: "Semi Skilled Body Builder",
-    experience: "2+ years",
+    experience: "5+ years",
     image: "/images/wade.jpeg",
     bio: "Wade joined us just over 2 years ago as a body builder lad with a bit of guidance from the MD, Wade is now smashing it with his own bay and taking on some of our most challenging bespoke work.",
     achievements: [
@@ -143,8 +143,8 @@ const teamMembers = [
   },
   {
     name: "Dean Smith",
-    position: "Electrician",
-    experience: "2+ years",
+    position: "Semi skilled body builder and Electrican",
+    experience: "10+ years",
     image: "/images/dean-smith.jpeg",
     bio: "Dean joined us over a year ago and has fitted into the team well. Specialises in Electrics and precision metalwork construction.",
     achievements: [
@@ -739,7 +739,7 @@ export default function About() {
                   onClick={() => setSelectedTeamMember(member)}
                 >
                   <div
-                    className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl focus:shadow-2xl hover:border-gray-300 focus:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 focus:-translate-y-2 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:ring-opacity-50"
+                    className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl focus:shadow-2xl hover:border-gray-300 focus:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 focus:-translate-y-2 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:ring-opacity-50 min-h-[500px] flex flex-col"
                     role="button"
                     tabIndex={0}
                     aria-label={`View ${member.name}'s profile`}
@@ -757,7 +757,7 @@ export default function About() {
                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                     </div>
-                    <div className="p-6">
+                    <div className="p-8 flex-1 flex flex-col">
                       <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600 transition-colors">
                         {member.name}
                       </h3>
@@ -766,9 +766,7 @@ export default function About() {
                         <Clock size={14} className="mr-1" aria-hidden="true" />
                         {member.experience}
                       </div>
-                      <div className="mt-3 text-xs text-gray-500 leading-relaxed line-clamp-3">
-                        {member.bio.substring(0, 120)}...
-                      </div>
+                      <div className="mt-3 text-sm text-gray-600 leading-relaxed flex-1">{member.bio}</div>
                     </div>
                   </div>
                 </motion.div>
@@ -812,7 +810,7 @@ export default function About() {
                   onClick={() => setSelectedTeamMember(member)}
                 >
                   <div
-                    className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl focus:shadow-2xl hover:border-gray-300 focus:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 focus:-translate-y-2 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:ring-opacity-50"
+                    className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl focus:shadow-2xl hover:border-gray-300 focus:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 focus:-translate-y-2 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:ring-opacity-50 min-h-[500px] flex flex-col"
                     role="button"
                     tabIndex={0}
                     aria-label={`View ${member.name}'s profile`}
@@ -830,7 +828,7 @@ export default function About() {
                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                     </div>
-                    <div className="p-6">
+                    <div className="p-8 flex-1 flex flex-col">
                       <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600 transition-colors">
                         {member.name}
                       </h3>
@@ -839,9 +837,7 @@ export default function About() {
                         <Clock size={14} className="mr-1" aria-hidden="true" />
                         {member.experience}
                       </div>
-                      <div className="mt-3 text-xs text-gray-500 leading-relaxed line-clamp-3">
-                        {member.bio.substring(0, 120)}...
-                      </div>
+                      <div className="mt-3 text-sm text-gray-600 leading-relaxed flex-1">{member.bio}</div>
                     </div>
                   </div>
                 </motion.div>
