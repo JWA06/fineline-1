@@ -40,8 +40,8 @@ const companyInfo = {
   industries: ["Logistics", "Construction", "Retail", "Utilities", "Waste Management", "Local Authorities"],
 }
 
-// Team members with enhanced information
-const teamMembers = [
+// Leadership team members
+const leadershipTeam = [
   {
     name: "Dave Carnell",
     position: "Managing Director & Founder",
@@ -62,10 +62,25 @@ const teamMembers = [
     position: "Business Manager",
     experience: "18+ years",
     image: "/images/jemma-kelly-portrait.jpeg",
-    bio: "Jemma leads our engineering team, ensuring every design meets the highest standards of quality and functionality.",
-    achievements: ["Patented 3 design innovations", "Reduced production time by 25%"],
+    bio: "Jemma leads our business operations, ensuring every aspect of the company runs smoothly while maintaining our high standards of customer service.",
+    achievements: ["Strategic business planning", "Customer satisfaction improvement by 40%"],
     socialMedia: {
-      linkedin: "https://linkedin.com/in/",
+      linkedin: "https://linkedin.com/in/jemmakelly",
+    },
+  },
+  {
+    name: "Johnny",
+    position: "Production Manager",
+    experience: "15+ years",
+    image: "/images/team-member-4.jpeg",
+    bio: "Johnny oversees our production processes, ensuring quality standards are met while optimizing efficiency across all manufacturing operations.",
+    achievements: [
+      "Streamlined production workflows",
+      "Reduced production time by 20%",
+      "Implemented quality control systems",
+    ],
+    socialMedia: {
+      linkedin: "https://linkedin.com/in/johnny",
     },
   },
   {
@@ -84,89 +99,120 @@ const teamMembers = [
     },
   },
   {
-    name: "Dean Smith",
-    position: "Semi Skilled Body Builder & Electrician",
-    experience: "2+ years",
-    image: "/images/dean-smith.jpeg",
-    bio: "Dean is a highly skilled fabricator specializing in precision metalwork and custom body construction. His expertise in advanced welding techniques and attention to detail ensures every project meets our exacting standards.",
+    name: "Callum Dunn",
+    position: "Team Leader / Fully Skilled Body Builder",
+    experience: "11+ years",
+    image: "/images/josh-logan.jpeg",
+    bio: "Callum started in the industry at 16 and has 11 years experience. His knowledge and skills help him take on some of our most Bespoke and challenging work.",
     achievements: [
-      "Specialist in aluminum and stainless steel fabrication",
-      "Completed 300+ custom body builds",
-      "Mentor to junior fabricators and apprentices",
+      "Developed comprehensive quality control protocols",
+      "Achieved 99.5% quality approval rate",
+      "Reduced defect rates by 45%",
     ],
     socialMedia: {
-      linkedin: "https://linkedin.com/in/deansmith",
+      linkedin: "https://linkedin.com/in/callum",
     },
+  },
+]
+
+// Team members
+const teamMembers = [
+  {
+    name: "Josh Logan",
+    position: "Semi Skilled Body Builder",
+    experience: "1+ years",
+    image: "/images/josh-logan.jpeg",
+    bio: "Josh started with us Jan 25 and now has his own building space. He fitted in well with the team and is getting amazing at perfecting his builds.",
+    achievements: [
+      "Completed Level 1 Fabrication course",
+      "Assisted in 25+ body builds during training",
+      "Recognized for exceptional teamwork and dedication",
+    ],
   },
   {
     name: "Wade Fitton",
     position: "Semi Skilled Body Builder",
     experience: "2+ years",
     image: "/images/wade.jpeg",
-    bio: "Wade is one of our promising apprentices, learning the craft of commercial vehicle body fabrication under the guidance of our experienced team. His enthusiasm and dedication to learning make him a valuable addition to our growing workforce.",
+    bio: "Wade joined us just over 2 years ago as a body builder lad with a bit of guidance from the MD, Wade is now smashing it with his own bay and taking on some of our most challenging bespoke work.",
     achievements: [
       "Completed Level 2 Fabrication and Welding course",
       "Assisted in 50+ body builds during apprenticeship",
       "Recognized for outstanding progress and work ethic",
     ],
-    socialMedia: {
-      linkedin: "https://linkedin.com/in/wadethompson",
-    },
+  },
+  {
+    name: "Dean Smith",
+    position: "Electrician",
+    experience: "2+ years",
+    image: "/images/dean-smith.jpeg",
+    bio: "Dean joined us over a year ago and has fitted into the team well. Specialises in Electrics and precision metalwork construction.",
+    achievements: [
+      "Specialist in electrical systems installation",
+      "Completed 100+ custom body builds",
+      "Expert in advanced wiring techniques",
+    ],
   },
   {
     name: "Alex Kelly",
     position: "Semi Skilled Body Builder",
     experience: "4+ years",
     image: "/images/alex-kelly.jpeg",
-    bio: "Alex, known as 'Big Al' to the team, is one of our newest apprentices showing great promise in commercial vehicle body fabrication. His eagerness to learn and positive attitude make him a valued member of our growing team.",
+    bio: "Our youngest semi skilled body builder at Fine Line. At just 15, he joined Dave and is now on his way to being fully skilled. Specialises in furniture builds, Electrics and Tail lift fitment.",
     achievements: [
-      "Currently completing Level 1 Fabrication course",
-      "Assisted in 25+ body builds during training",
-      "Recognized for exceptional teamwork and dedication",
+      "Youngest certified body builder on team",
+      "Specialist in furniture van construction",
+      "Expert in tail lift installation",
     ],
-    socialMedia: {
-      linkedin: "https://linkedin.com/in/alexkelly",
-    },
   },
   {
-    name: "Josh Logan",
+    name: "Bailey",
     position: "Semi Skilled Body Builder",
     experience: "1+ years",
-    image: "/images/team-member-4.jpeg",
-    bio: "Michael is a highly experienced fabricator and certified welder who brings precision and expertise to every project. His attention to detail and commitment to quality ensures that every vehicle body meets our exacting standards.",
+    image: "/images/team-member-bdogg.jpeg",
+    bio: "Bailey  joined us a little over a year ago. His enthusiasm for the industry is a pleasure to see and can see him progressing to his own bay in the very near future.",
     achievements: [
-      "Certified in MIG, TIG, and Arc welding techniques",
-      "Completed 200+ complex fabrication projects",
-      "Specialist in custom aluminum body construction",
+      "Currently completing Level 1 Fabrication course",
+      "Assisted in 15+ body builds during training",
+      "Recognized for quick learning and attention to detail",
     ],
-    socialMedia: {
-      linkedin: "https://linkedin.com/in/michaelroberts",
-    },
+  },
+  {
+    name: "Kyle",
+    position: "Trainee Electrian and Tail lift fitter. ",
+    experience: "1+ years",
+    image: "/images/team-member-kyle.jpeg",
+    bio: "Kyle joined us 2months ago. He is eager to learn new skills and progress at Fine Line.",
+    achievements: [
+      "Progressing through Level 1 Fabrication training",
+      "Assisted in 20+ body builds",
+      "Demonstrated excellent teamwork and reliability",
+    ],
   },
 ]
 
 // Company values
 const values = [
   {
-    icon: <Shield size={32} />,
+    icon: <Shield size={20} />,
     title: "Quality First",
     description:
       "We never compromise on quality. Every vehicle body is built to the highest standards using premium materials and proven manufacturing processes.",
   },
   {
-    icon: <Users size={32} />,
+    icon: <Users size={20} />,
     title: "Customer Focus",
     description:
       "Our customers are at the heart of everything we do. We listen, understand, and deliver solutions that exceed expectations.",
   },
   {
-    icon: <Zap size={32} />,
+    icon: <Zap size={20} />,
     title: "Innovation",
     description:
       "We continuously invest in new technologies and processes to stay at the forefront of commercial vehicle manufacturing.",
   },
   {
-    icon: <Heart size={32} />,
+    icon: <Heart size={20} />,
     title: "Integrity",
     description:
       "We conduct business with honesty, transparency, and respect for all our stakeholders, building lasting relationships.",
@@ -180,28 +226,28 @@ const milestones = [
     title: "Career Started",
     description:
       "At just 16 years old, Dave Carnell began his journey as an apprentice working on truck bodies—and he's been passionate about the craft ever since.",
-    icon: <Building size={24} />,
+    icon: <Building size={16} />,
   },
   {
     year: "2013",
     title: "Head Builder",
     description:
       "Dave's skill quickly set him apart—earning him the role of Head Builder, trusted to lead the team with precision and expertise.",
-    icon: <Truck size={24} />,
+    icon: <Truck size={16} />,
   },
   {
     year: "2021",
     title: "Apprentice To Founder",
     description:
       "Dave soon realised his ambition matched his talent—he knew he had the drive, vision, and skill to build something greater. Confident he could raise the standard and lead in his own way, he made the bold decision to start his own company and never looked back.",
-    icon: <Factory size={24} />,
+    icon: <Factory size={16} />,
   },
   {
     year: "2022",
     title: "Fineline Bodies",
     description:
       "Now established as a growing force in the industry, Fine Line Bodies is pushing every day to raise the bar—driven by ambition, quality, and the belief that being the best isn't a goal, it's a standard we're building toward.",
-    icon: <Zap size={24} />,
+    icon: <Zap size={16} />,
   },
 ]
 
@@ -581,7 +627,7 @@ export default function About() {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
-                  <div className="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                  <div className="bg-gray-100 w-12 h-12 rounded-full flex items-center justify-center mb-6">
                     <div className="text-gray-900">{value.icon}</div>
                   </div>
                   <h3 className="text-xl font-bold mb-4 text-gray-900">{value.title}</h3>
@@ -636,7 +682,7 @@ export default function About() {
                   >
                     {/* Timeline Dot */}
                     <div
-                      className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-16 h-16 bg-black rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center"
+                      className="absolute left-8 md:left-1/2 transform md:-translate-x-1/2 w-12 h-12 bg-black rounded-full border-4 border-white shadow-lg z-10 flex items-center justify-center"
                       aria-hidden="true"
                     >
                       <div className="text-white">{milestone.icon}</div>
@@ -657,8 +703,8 @@ export default function About() {
           </div>
         </section>
 
-        {/* Team Section */}
-        <section className="py-24 bg-gray-50" aria-labelledby="team-heading">
+        {/* Leadership Team Section */}
+        <section className="py-24 bg-gray-50" aria-labelledby="leadership-heading">
           <div className="container mx-auto px-4">
             <motion.div
               className="text-center mb-16"
@@ -669,9 +715,9 @@ export default function About() {
             >
               <div className="inline-flex items-center bg-black text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
                 <Users size={16} className="mr-2" aria-hidden="true" />
-                Our People
+                Leadership
               </div>
-              <h2 id="team-heading" className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+              <h2 id="leadership-heading" className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
                 Leadership Team
               </h2>
               <p className="text-gray-600 max-w-2xl mx-auto text-lg">
@@ -680,7 +726,80 @@ export default function About() {
               </p>
             </motion.div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+              {leadershipTeam.map((member, index) => (
+                <motion.div
+                  key={index}
+                  className="group cursor-pointer"
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  whileHover={{ y: -10 }}
+                  onClick={() => setSelectedTeamMember(member)}
+                >
+                  <div
+                    className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl focus:shadow-2xl hover:border-gray-300 focus:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 focus:-translate-y-2 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:ring-opacity-50"
+                    role="button"
+                    tabIndex={0}
+                    aria-label={`View ${member.name}'s profile`}
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter" || e.key === " ") {
+                        setSelectedTeamMember(member)
+                      }
+                    }}
+                  >
+                    <div className="relative h-80 overflow-hidden">
+                      <Image
+                        src={member.image || "/placeholder.svg"}
+                        alt={`Portrait of ${member.name}, ${member.position}`}
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                      />
+                    </div>
+                    <div className="p-6">
+                      <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600 transition-colors">
+                        {member.name}
+                      </h3>
+                      <p className="text-gray-600 mb-2">{member.position}</p>
+                      <div className="flex items-center text-sm text-gray-500">
+                        <Clock size={14} className="mr-1" aria-hidden="true" />
+                        {member.experience}
+                      </div>
+                      <div className="mt-3 text-xs text-gray-500 leading-relaxed line-clamp-3">
+                        {member.bio.substring(0, 120)}...
+                      </div>
+                    </div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Meet The Team Section */}
+        <section className="py-24 bg-white" aria-labelledby="team-heading">
+          <div className="container mx-auto px-4">
+            <motion.div
+              className="text-center mb-16"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              <div className="inline-flex items-center bg-black text-white px-4 py-2 rounded-full text-sm font-medium mb-6">
+                <Users size={16} className="mr-2" aria-hidden="true" />
+                Our Craftsmen
+              </div>
+              <h2 id="team-heading" className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+                Meet The Team
+              </h2>
+              <p className="text-gray-600 max-w-2xl mx-auto text-lg">
+                Our skilled craftsmen and apprentices who bring precision, dedication, and expertise to every project.
+              </p>
+            </motion.div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {teamMembers.map((member, index) => (
                 <motion.div
                   key={index}
@@ -720,21 +839,8 @@ export default function About() {
                         <Clock size={14} className="mr-1" aria-hidden="true" />
                         {member.experience}
                       </div>
-                      <div className="mt-3 text-xs text-gray-500 leading-relaxed">
-                        {member.name === "Dave Carnell" &&
-                          "Visionary leader with unmatched industry expertise and passion for excellence"}
-                        {member.name === "Jemma Kelly" &&
-                          "Strategic business operations specialist ensuring seamless company growth"}
-                        {member.name === "Devon Bowes" &&
-                          "Dev started in the industry at 16 and has over 15 years experience. Specialises in furniture builds, Making them bespoke to Fine Line Bodies"}
-                        {member.name === "Dean Smith" &&
-                          "Dean joined us over a year ago  and has fitted into the team well. Specialises in Electrics"}
-                        {member.name === "Wade Fitton" &&
-                          "Wade joined us just over 2 years ago as a body builder lad with a bit of guidance from the MD, Wade is now smashing It with his own bay and taking on some of our most challenging bespoke work"}
-                        {member.name === "Alex Kelly" &&
-                          "Our youngest semi skilled body builder at Fine Line. At just 15, he joined Dave and is now on his way to being fully skilled. Specialises in furniture builds, Electrics and Tail lift fitment"}
-                        {member.name === "Josh Logan" &&
-                          "Josh started with us Jan 25 and now has his own building space. He fitted in well with the team and is getting amazing at perfecting his builds"}
+                      <div className="mt-3 text-xs text-gray-500 leading-relaxed line-clamp-3">
+                        {member.bio.substring(0, 120)}...
                       </div>
                     </div>
                   </div>

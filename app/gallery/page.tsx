@@ -147,6 +147,11 @@ const galleryItems = [
     image: "/images/truck-rear-tail-lift.jpeg",
     description: "Truck Rear View with Tail Lift System",
   },
+  {
+    id: 30,
+    image: "/images/highway-maintenance-front.jpeg",
+    description: "Highway Maintenance Truck - M9 HDD Professional Vehicle",
+  },
 ].filter((item) => {
   // Filter out any potentially animated image formats
   const imageExtension = item.image.split(".").pop()?.toLowerCase()

@@ -4,19 +4,7 @@ import { useState, useMemo } from "react"
 import Image from "next/image"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
-import {
-  ChevronRight,
-  X,
-  Phone,
-  Mail,
-  Search,
-  Truck,
-  Shield,
-  Settings,
-  ContrastIcon as Compare,
-  MessageSquare,
-  Menu,
-} from "lucide-react"
+import { X, Phone, Mail, Search, Truck, Settings, ContrastIcon as Compare, Menu } from "lucide-react"
 
 // Enhanced body types data with more details
 const bodyTypes = [
@@ -32,6 +20,8 @@ const bodyTypes = [
       "/images/box-van-daf-cf.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.01.17%20AM-ehrMI3aZA7EYtQUbwoZG0c6VfkA1O0.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.01.17%20AM%20%281%29-V44F3n9ju21hlgA1TLlDCfwCycWBY5.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.01.17%20AM%20%284%29-cjlAK3SAcEmmDIrEs7OAW7Wv6h1zWw.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.01.17%20AM%20%283%29-LNFDYp6M6EZzmZdOPYWJ9hibLCKH7T.jpeg",
     ],
     features: ["Secure enclosed storage", "Weather protection", "Customizable shelving", "Multiple door options"],
     applications: ["Delivery services", "Retail distribution", "Moving services", "General cargo"],
@@ -55,6 +45,8 @@ const bodyTypes = [
       "/images/dropside-fineline.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%209.57.05%20AM-oBVngCVx2VB35UqLtT0sVgTD44yZkh.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%209.57.05%20AM%20%281%29-MMr1a4dDGWu3XjExpTUD0BFPDaCcYj.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%209.57.05%20AM%20%282%29-Uf46mSxs9f5Zd9O2zcQEIXLmCMTN8z.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%209.57.05%20AM%20%283%29-nf8W3MuJ0PjYy35J6IBVOv3rNVbpc1.jpeg",
     ],
     features: ["Easy side access", "Versatile loading options", "Robust construction", "Quick-release mechanisms"],
     applications: ["Construction", "Landscaping", "General haulage", "Building supplies"],
@@ -74,17 +66,19 @@ const bodyTypes = [
       "Professional multi-compartment removal vans with hydraulic tail lifts for efficient furniture moving.",
     detailedDescription:
       "Specialized furniture removal vans featuring multiple glass-fronted compartments for organized storage, hydraulic tail lifts for easy loading, and professional-grade construction. Perfect for removal companies requiring maximum efficiency and furniture protection.",
-    image: "/images/furniture-removal-van.png",
+    image: "/images/multi-compartment-removal-van.jpeg",
     gallery: [
+      "/images/multi-compartment-removal-van.jpeg",
       "/images/furniture-removal-van.png",
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%209.59.17%20AM%20%281%29-okHA2XnUwx5x4wB4TkBJk0oFjXXMq9.jpeg",
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%209.59.17%20AM-1BdCiqtRN5KyMnyPbBdLgqMyZtVqrF.jpeg",
+      "/images/furniture-van-interior-1.jpeg",
+      "/images/van-interior-mixed-storage.jpeg",
+      "/images/commercial-truck-exterior.jpeg",
     ],
     features: [
-      "Multiple glass compartments",
-      "Hydraulic tail lift",
+      "Multiple individual compartments",
+      "Secure locking mechanisms",
       "Organized storage system",
-      "Professional appearance",
+      "Professional aluminum construction",
     ],
     applications: ["House removals", "Office relocations", "Furniture transport", "Commercial moving"],
     testimonial: {
@@ -96,20 +90,20 @@ const bodyTypes = [
   },
   {
     id: 12,
-    name: "5 Door Furniture Removal Van",
+    name: "Tail lift fitment",
     category: "Specialized",
     description:
-      "Advanced multi-compartment removal van with five individual access doors for maximum organization and efficiency.",
+      "Advanced Tail lift fitment for your trucks.",
     detailedDescription:
       "Professional 5-door furniture removal van featuring five separate compartments with individual access doors. Each compartment provides secure, organized storage for different furniture categories, making loading and unloading more efficient. Perfect for high-end removal services requiring maximum organization and furniture protection.",
-    image: "/images/5-door-furniture-removal-fineline.jpeg",
+    image: "/images/tail-lift-fineline.jpeg",
     features: [
       "Five individual compartments",
       "Separate access doors",
       "Organized storage system",
       "Professional aluminum construction",
     ],
-    applications: ["Premium removals", "Furniture logistics", "High-value item transport", "Organized moving services"],
+    applications: ["Premium tail lift", "Expert fitment", "High-value tail lift", "Organized moving services"],
     testimonial: {
       quote: "The 5-door system revolutionized our removal process. Each item category has its own secure compartment.",
       author: "Michael Roberts",
@@ -117,9 +111,7 @@ const bodyTypes = [
     },
     videoUrl: "/videos/5-door-furniture-removal-demo.mp4",
     gallery: [
-      "/images/5-door-furniture-removal-fineline.jpeg",
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%205.38.51%20PM-LFXwF16GsM9icnMqgh7NnfJMOnmQOR.jpeg",
-      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%205.38.52%20PM-MV437Z5zAwSdOHKH9L7VgzuHcHcHpm.jpeg",
+      "/images/tail-lift-fineline.jpeg"
     ],
   },
   {
@@ -134,6 +126,8 @@ const bodyTypes = [
       "/images/curtain-side-body-fineline.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.37.41%20AM%20%281%29-MvqVFq1hcLOLsulmokMtTJmlR7meQt.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.37.41%20AM-ACk3yEK2cckeByD4hAolyHfnnMvfk4.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-12%20at%2011.03.11%20AM%20%281%29-C9x7H7ME0emIX0mRLyMFng9njdcjrq.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-05-12%20at%2011.03.11%20AM-fA2TOVSp1XJcObZeB2zb9HAENIzbHO.jpeg",
     ],
     features: ["Full side access", "Weather protection", "Secure transportation", "Forklift compatible"],
     applications: ["Freight transport", "Pallet delivery", "Distribution", "Logistics"],
@@ -152,10 +146,13 @@ const bodyTypes = [
       "Advanced curtain sider bodies with integrated Moffett forklift systems for independent loading operations.",
     detailedDescription:
       "Specialized curtain sider bodies featuring integrated Moffett truck-mounted forklift systems. Perfect for businesses requiring independent loading and unloading capabilities at locations without dock facilities. Combines the flexibility of side access with the convenience of onboard material handling equipment.",
-    image: "/images/moffett-tail-lift-body.jpeg",
+    image: "/images/furniture-removal-van-rear.jpeg",
     gallery: [
+      "/images/furniture-removal-van-rear.jpeg",
       "/images/moffett-rear-view.jpeg",
       "/images/curtain-sider-open.jpeg",
+      "/images/curtain-sider-moffett-underside.jpeg",
+      "/images/curtain-sider-moffett-interior.jpeg",
     ],
     features: [
       "Integrated Moffett forklift",
@@ -180,7 +177,13 @@ const bodyTypes = [
     detailedDescription:
       "Robust flatbed bodies offering maximum loading flexibility. Perfect for construction equipment, machinery, and oversized cargo transport.",
     image: "/images/flatbed-body.png",
-    gallery: ["/images/flatbed-1.jpg", "/images/flatbed-2.jpg"],
+    gallery: [
+      "/images/flatbed-body.png",
+      "/images/flatbed-loading.jpeg",
+      "/images/flatbed-construction.jpeg",
+      "/images/flatbed-machinery.jpeg",
+      "/images/flatbed-steel.jpeg",
+    ],
     features: ["Maximum loading flexibility", "Robust construction", "Various securing options", "Crane compatibility"],
     applications: ["Construction equipment", "Machinery transport", "Steel transport", "Plant hire"],
     testimonial: {
@@ -197,12 +200,13 @@ const bodyTypes = [
     description: "Custom-designed bodies tailored to specific business requirements.",
     detailedDescription:
       "When standard solutions don't fit, we create bespoke bodies designed specifically for your unique requirements. From concept to completion, we deliver exactly what you need.",
-    image: "/images/fineline-crane-operation.jpeg",
+    image: "/images/highway-maintenance-front.jpeg",
     gallery: [
       "/images/fineline-crane-operation.jpeg",
-      "/images/bespoke-1.jpg",
-      "/images/bespoke-2.jpg",
-      "/images/bespoke-3.jpg",
+      "/images/highway-maintenance-front.jpeg",
+      "/images/highway-maintenance-rear.jpeg",
+      "/images/m9-hdd-truck-rear.jpeg",
+      "/images/m9-hdd-truck-side.jpeg",
     ],
     features: ["Tailored to your needs", "Unique solutions", "Optimized for your business", "Full design service"],
     applications: ["Specialized transport", "Mobile workshops", "Emergency services", "Unique requirements"],
@@ -225,6 +229,8 @@ const bodyTypes = [
       "/images/builders-merchant-fineline.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.35.45%20AM-MrEf7IuLShXqiln3qA4fsi8p66kCzx.jpeg",
       "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.35.45%20AM%20%282%29-RZBT1TxauYAe2vfUDv0KessOfW2b09.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.35.45%20AM%20%284%29-jqAfnM1QDoIQVkcEYCDlu8LhkJgg73.jpeg",
+      "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.35.45%20AM%20%285%29-6730PqvmJlXGo2yr2MSeBEkaU4kEio.jpeg",
     ],
     features: [
       "Integrated crane system",
@@ -257,6 +263,8 @@ export default function BodyTypes() {
   const [showImageGallery, setShowImageGallery] = useState(false)
   const [selectedGallery, setSelectedGallery] = useState([])
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
+  const [currentMainImage, setCurrentMainImage] = useState({})
+  const [expandedGalleries, setExpandedGalleries] = useState({}) // Track which galleries are expanded
 
   // Filter and search logic
   const filteredBodyTypes = useMemo(() => {
@@ -288,7 +296,8 @@ export default function BodyTypes() {
   }
 
   const openImageGallery = (bodyType, imageIndex = 0) => {
-    setSelectedGallery(bodyType.gallery)
+    const gallery = bodyType.gallery && bodyType.gallery.length > 0 ? bodyType.gallery : [bodyType.image]
+    setSelectedGallery(gallery)
     setCurrentImageIndex(imageIndex)
     setShowImageGallery(true)
   }
@@ -299,6 +308,29 @@ export default function BodyTypes() {
 
   const prevImage = () => {
     setCurrentImageIndex((prev) => (prev - 1 + selectedGallery.length) % selectedGallery.length)
+  }
+
+  // Toggle expanded gallery for a specific body type
+  const toggleExpandedGallery = (bodyTypeId) => {
+    setExpandedGalleries((prev) => ({
+      ...prev,
+      [bodyTypeId]: !prev[bodyTypeId],
+    }))
+  }
+
+  // Get visible thumbnails based on expanded state - max 5 images
+  const getVisibleThumbnails = (bodyType) => {
+    const isExpanded = expandedGalleries[bodyType.id]
+    const gallery = bodyType.gallery || []
+
+    // Always limit to maximum 5 images
+    const maxImages = Math.min(gallery.length, 5)
+
+    if (isExpanded || gallery.length <= 5) {
+      return gallery.slice(0, maxImages)
+    }
+
+    return gallery.slice(0, maxImages)
   }
 
   return (
@@ -449,12 +481,7 @@ export default function BodyTypes() {
               transition={{ duration: 0.5 }}
             >
               <Truck size={16} className="mr-2" />
-
-              <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"></path>
-              <path d="M15 18H9"></path>
-              <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"></path>
-              <circle cx="17" cy="18" r="2"></circle>
-              <circle cx="7" cy="18" r="2"></circle>
+              Commercial Vehicle Bodies
             </motion.div>
             <motion.h1
               className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-gray-900 to-gray-600 bg-clip-text text-transparent"
@@ -700,22 +727,68 @@ export default function BodyTypes() {
                     <Compare size={18} />
                   </button>
 
-                  {/* Image with Overlay */}
-                  <button
-                    className="relative h-64 overflow-hidden w-full"
-                    onClick={() => openImageGallery(bodyType, 0)}
-                  >
-                    <Image
-                      src={bodyType.image || "/placeholder.svg"}
-                      alt={bodyType.name}
-                      fill
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    {/* Image count indicator */}
-                    <div className="absolute bottom-2 right-2 bg-black/70 text-white px-2 py-1 rounded text-xs">
-                      {bodyType.gallery.length} photos
+                  {/* Main Image with Enhanced Gallery */}
+                  <div className="relative bg-gray-100 rounded-t-xl overflow-hidden">
+                    {/* Main Image Display */}
+                    <div className="relative h-64 w-full">
+                      <Image
+                        src={
+                          bodyType.gallery?.[currentMainImage[bodyType.id] || 0] || bodyType.image || "/placeholder.svg"
+                        }
+                        alt={`${bodyType.name} - Professional multi-compartment commercial vehicle body with individual access doors`}
+                        fill
+                        className="object-cover cursor-pointer transition-transform duration-300 hover:scale-105"
+                        onClick={() => openImageGallery(bodyType, currentMainImage[bodyType.id] || 0)}
+                      />
+
+                      {/* View All Gallery Button - Prominent Overlay */}
+                      <button
+                        onClick={() => openImageGallery(bodyType, 0)}
+                        className="absolute bottom-4 right-4 bg-black/80 hover:bg-black/90 text-white px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 flex items-center shadow-lg hover:shadow-xl transform hover:scale-105"
+                      >
+                        <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth={2}
+                            d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                          />
+                        </svg>
+                        View All ({Math.min(bodyType.gallery?.length || 1, 5)})
+                      </button>
                     </div>
-                  </button>
+
+                    {/* Enhanced Thumbnail Strip with View All Interaction - Max 5 images */}
+                    {bodyType.gallery && bodyType.gallery.length > 1 && (
+                      <div className="bg-gray-50 border-t border-gray-200 p-3">
+                        <div className="flex space-x-2 overflow-x-auto">
+                          {getVisibleThumbnails(bodyType).map((image, index) => (
+                            <button
+                              key={index}
+                              onClick={() => setCurrentMainImage((prev) => ({ ...prev, [bodyType.id]: index }))}
+                              className={`relative w-12 h-12 rounded overflow-hidden border-2 transition-all flex-shrink-0 ${
+                                (currentMainImage[bodyType.id] || 0) === index
+                                  ? "border-blue-500 ring-2 ring-blue-200"
+                                  : "border-gray-300 hover:border-gray-400"
+                              }`}
+                            >
+                              <Image
+                                src={image || "/placeholder.svg"}
+                                alt={`${bodyType.name} thumbnail ${index + 1}`}
+                                fill
+                                className="object-cover"
+                              />
+                            </button>
+                          ))}
+                          {bodyType.gallery.length > 5 && (
+                            <div className="relative w-12 h-12 rounded overflow-hidden border-2 border-gray-300 bg-gray-100 flex items-center justify-center text-xs text-gray-600 font-medium flex-shrink-0">
+                              +{bodyType.gallery.length - 5}
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    )}
+                  </div>
 
                   {/* Content */}
                   <div className="p-6">
@@ -763,13 +836,68 @@ export default function BodyTypes() {
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                 >
                   <div className="flex flex-col md:flex-row">
-                    <div className="relative w-full md:w-80 h-48 md:h-auto">
-                      <Image
-                        src={bodyType.image || "/placeholder.svg"}
-                        alt={bodyType.name}
-                        fill
-                        className="object-cover"
-                      />
+                    <div className="relative w-full md:w-96">
+                      {/* Main Image */}
+                      <div className="relative h-48 w-full">
+                        <Image
+                          src={
+                            bodyType.gallery?.[currentMainImage[bodyType.id] || 0] ||
+                            bodyType.image ||
+                            "/placeholder.svg"
+                          }
+                          alt={`${bodyType.name} - Professional commercial vehicle body for specialized transport applications`}
+                          fill
+                          className="object-cover cursor-pointer transition-transform duration-300 hover:scale-105 rounded-lg"
+                          onClick={() => openImageGallery(bodyType, currentMainImage[bodyType.id] || 0)}
+                        />
+
+                        {/* View All Button */}
+                        <button
+                          onClick={() => openImageGallery(bodyType, 0)}
+                          className="absolute top-3 right-3 bg-black/80 hover:bg-black/90 text-white px-3 py-1.5 rounded-lg text-xs font-semibold transition-all duration-200 flex items-center shadow-lg"
+                        >
+                          <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                            />
+                          </svg>
+                          View All ({Math.min(bodyType.gallery?.length || 1, 5)})
+                        </button>
+                      </div>
+
+                      {/* Enhanced Thumbnail Strip for List View - Max 5 images */}
+                      {bodyType.gallery && bodyType.gallery.length > 1 && (
+                        <div className="mt-2 p-2 bg-gray-50 rounded-lg">
+                          <div className="flex space-x-1 overflow-x-auto">
+                            {getVisibleThumbnails(bodyType).map((image, index) => (
+                              <button
+                                key={index}
+                                onClick={() => setCurrentMainImage((prev) => ({ ...prev, [bodyType.id]: index }))}
+                                className={`relative w-10 h-10 rounded overflow-hidden border-2 transition-all flex-shrink-0 ${
+                                  (currentMainImage[bodyType.id] || 0) === index
+                                    ? "border-blue-500 ring-1 ring-blue-200"
+                                    : "border-gray-300 hover:border-gray-400"
+                                }`}
+                              >
+                                <Image
+                                  src={image || "/placeholder.svg"}
+                                  alt={`${bodyType.name} thumbnail ${index + 1}`}
+                                  fill
+                                  className="object-cover"
+                                />
+                              </button>
+                            ))}
+                            {bodyType.gallery.length > 5 && (
+                              <div className="relative w-10 h-10 rounded overflow-hidden border-2 border-gray-300 bg-gray-100 flex items-center justify-center text-xs text-gray-600 font-medium flex-shrink-0">
+                                +{bodyType.gallery.length - 5}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      )}
                     </div>
                     <div className="flex-1 p-6">
                       <div className="flex items-start justify-between mb-4">
@@ -796,8 +924,6 @@ export default function BodyTypes() {
                           <div className="font-semibold">{bodyType.category}</div>
                         </div>
                       </div>
-
-                      <div className="flex items-center justify-between"></div>
 
                       <div className="flex items-center justify-between">
                         <div className="flex space-x-2">
@@ -887,16 +1013,16 @@ export default function BodyTypes() {
                       REDUCED
                     </span>
                     <Image
-                      src="/images/curtain-side-body-fineline.jpeg"
-                      alt="Used Scania R450"
+                      src="/images/5-door-furniture-removal-fineline.jpeg"
+                      alt="Used curtainside truck in excellent condition with full service history"
                       fill
                       className="object-cover"
                     />
                   </div>
                   <div className="p-6">
-                    <h4 className="text-xl font-bold mb-2">Curtainside Body</h4>
+                    <h4 className="text-xl font-bold mb-2">5 Door Furniture Removal Van</h4>
                     <p className="text-gray-600 mb-4">
-                      Complete curtainside truck in excellent condition. Full service history.
+                      Complete 5 door removal truck in excellent condition. Full service history.
                     </p>
                     <div className="flex space-x-2">
                       <Link
@@ -926,7 +1052,7 @@ export default function BodyTypes() {
                     </span>
                     <Image
                       src="/images/furniture-removal-van.png"
-                      alt="Used Iveco Eurocargo"
+                      alt="Used furniture removal van perfect for delivery operations"
                       fill
                       className="object-cover"
                     />
@@ -962,7 +1088,7 @@ export default function BodyTypes() {
                     </span>
                     <Image
                       src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202025-06-23%20at%2010.35.45%20AM%20%281%29-Zv6yj6Y5yXpyrbq3FhHdOYrHxl4otw.jpeg"
-                      alt="Used MAN TGX with Crane"
+                      alt="Used crane truck ready for builders merchant operations"
                       fill
                       className="object-cover"
                     />
@@ -1088,96 +1214,20 @@ export default function BodyTypes() {
                 </div>
               </div>
 
-              <div className="bg-black text-white p-8 rounded-xl">
-                <h3 className="text-2xl font-bold mb-4">Can't Find What You're Looking For?</h3>
-                <p className="text-gray-300 mb-6">
-                  Don't worry! With our extensive network and years of experience, we can source almost any type of
-                  commercial vehicle body. Whether it's new, used, or something completely unique - just ask us and
-                  we'll do our best to help.
-                </p>
-                <div className="flex flex-col sm:flex-row justify-center gap-4">
-                  <Link
-                    href="/contact"
-                    className="bg-white text-black px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition-colors flex items-center justify-center"
-                  >
-                    Ask About Availability
-                    <MessageSquare size={16} className="ml-2" />
-                  </Link>
-                  <a
-                    href="tel:07340590412"
-                    className="border border-white text-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-black transition-colors flex items-center justify-center"
-                  >
-                    Call Us Now
-                    <Phone size={16} className="ml-2" />
-                  </a>
-                </div>
-              </div>
-            </motion.div>
-          </div>
-        </div>
-      </section>
-
-      {/* Enhanced CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-gray-900 to-black text-white">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Fleet?</h2>
-              <p className="text-xl text-gray-300 mb-8">
-                Get a personalized quote for your custom truck body requirements. Our experts are ready to help you find
-                the perfect solution.
-              </p>
-
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div className="text-center">
-                  <div className="bg-white/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <MessageSquare size={24} />
-                  </div>
-                  <h3 className="font-bold mb-2">Free Consultation</h3>
-                  <p className="text-sm text-gray-300">Discuss your requirements with our experts</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-white/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Settings size={24} />
-                  </div>
-                  <h3 className="font-bold mb-2">Custom Design</h3>
-                  <p className="text-sm text-gray-300">Tailored solutions for your specific needs</p>
-                </div>
-                <div className="text-center">
-                  <div className="bg-white/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <Shield size={24} />
-                  </div>
-                  <h3 className="font-bold mb-2">Quality Guarantee</h3>
-                  <p className="text-sm text-gray-300">Built to last with comprehensive warranty</p>
-                </div>
-              </div>
-
-              <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <div className="flex justify-center gap-4">
                 <Link
                   href="/contact"
-                  className="bg-white text-black px-8 py-4 rounded-lg font-medium hover:bg-gray-100 transition-colors flex items-center justify-center"
+                  className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800 transition-colors flex items-center justify-center"
                 >
-                  Get A Free Quote
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="lucide lucide-chevron-right ml-2"
-                  >
-                    <path d="m9 18 6-6-6-6"></path>
-                  </svg>
-                  <ChevronRight size={16} className="ml-2" />
+                  Enquire About New Bodies
+                  <Settings size={16} className="ml-2" />
+                </Link>
+                <Link
+                  href="/contact"
+                  className="border border-gray-300 text-gray-800 px-6 py-3 rounded-lg font-medium hover:bg-gray-50 transition-colors flex items-center justify-center"
+                >
+                  View Used Body Stock
+                  <Truck size={16} className="ml-2" />
                 </Link>
               </div>
             </motion.div>
@@ -1185,340 +1235,161 @@ export default function BodyTypes() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gray-900 text-white pt-16 pb-8" role="contentinfo">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            <div>
-              <Link href="/" className="flex items-center space-x-2 mb-6" aria-label="FineLine Bodies Home">
-                <div className="bg-white p-2 rounded">
-                  <Image
-                    src="/images/fineline-logo.jpeg"
-                    alt="FineLine Bodies Logo"
-                    width={120}
-                    height={60}
-                    className="h-10 w-auto"
-                  />
-                </div>
-              </Link>
-              <p className="text-gray-400 mb-6">Custom truck body solutions crafted with precision and expertise.</p>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-6">Quick Links</h3>
-              <ul className="space-y-3">
-                {["Home", "Body Types", "About", "Contact", "After Care", "Blog"].map((item) => (
-                  <li key={item}>
-                    <Link
-                      href={item === "Home" ? "/" : `/${item.toLowerCase().replace(" ", "-")}`}
-                      className="text-gray-400 hover:text-white transition-colors"
-                      aria-current={item === "Body Types" ? "page" : undefined}
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-6">Services</h3>
-              <ul className="space-y-3">
-                {[
-                  "Custom Truck Bodies",
-                  "Repairs & Maintenance",
-                  "Modifications",
-                  "Consultations",
-                  "After Sales Support",
-                ].map((item) => (
-                  <li key={item}>
-                    <Link href="#" className="text-gray-400 hover:text-white transition-colors">
-                      {item}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div>
-              <h3 className="text-lg font-bold mb-6">Contact Info</h3>
-              <address className="not-italic text-gray-400 space-y-3">
-                <p>Meridian Centre</p>
-                <p>Wainwright Street</p>
-                <p>Oldham, OL8 1EZ</p>
-                <p className="pt-2">
-                  <a
-                    href="tel:07340590412"
-                    className="hover:text-white transition-colors flex items-center"
-                    aria-label="Call us at 07340590412"
-                  >
-                    <Phone size={14} className="mr-2" aria-hidden="true" />
-                    07340590412
-                  </a>
-                </p>
-                <p>
-                  <a
-                    href="mailto:finelinebodies@outlook.com"
-                    className="hover:text-white transition-colors flex items-center"
-                    aria-label="Email us at finelinebodies@outlook.com"
-                  >
-                    <Mail size={14} className="mr-2" aria-hidden="true" />
-                    finelinebodies@outlook.com
-                  </a>
-                </p>
-              </address>
-            </div>
-          </div>
-
-          <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-500 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} jwa.services. All rights reserved.
-            </p>
-            <div className="flex space-x-6">
-              <Link href="/privacy-policy" className="text-gray-500 text-sm hover:text-white transition-colors">
-                Privacy Policy
-              </Link>
-              <Link href="/terms-of-service" className="text-gray-500 text-sm hover:text-white transition-colors">
-                Terms of Service
-              </Link>
-              <Link href="/cookie-policy" className="text-gray-500 text-sm hover:text-white transition-colors">
-                Cookie Policy
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      {/* Comparison Modal */}
+      {/* Image Gallery Modal */}
       <AnimatePresence>
-        {showCompareModal && compareList.length > 0 && (
+        {showImageGallery && (
           <motion.div
-            className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4"
+            className="fixed top-0 left-0 w-full h-full bg-black/80 z-50 flex items-center justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setShowCompareModal(false)}
           >
             <motion.div
-              className="bg-white rounded-xl max-w-6xl w-full max-h-[90vh] overflow-y-auto"
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              onClick={(e) => e.stopPropagation()}
+              className="relative bg-white rounded-xl shadow-lg max-w-5xl max-h-[90vh] overflow-hidden"
+              initial={{ scale: 0.9 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.9 }}
             >
-              <div className="p-6 border-b border-gray-200">
-                <div className="flex items-center justify-between">
-                  <h2 className="text-2xl font-bold">Compare Body Types</h2>
-                  <button
-                    onClick={() => setShowCompareModal(false)}
-                    className="p-2 hover:bg-gray-100 rounded-full transition-colors"
-                  >
-                    <X size={20} />
-                  </button>
-                </div>
-              </div>
+              {/* Close Button */}
+              <button
+                onClick={() => setShowImageGallery(false)}
+                className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full z-10"
+              >
+                <X size={20} />
+              </button>
 
-              <div className="p-6">
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead>
-                      <tr>
-                        <td className="p-4 font-semibold text-gray-600 w-48">Feature</td>
-                        {compareList.map((bodyType) => (
-                          <td key={bodyType.id} className="p-4 text-center min-w-64">
-                            <div className="relative">
-                              <button
-                                onClick={() => toggleCompare(bodyType)}
-                                className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full p-1 hover:bg-red-600 transition-colors"
-                              >
-                                <X size={12} />
-                              </button>
-                              <Image
-                                src={bodyType.image || "/placeholder.svg"}
-                                alt={bodyType.name}
-                                width={200}
-                                height={120}
-                                className="w-full h-24 object-cover rounded-lg mb-3"
-                              />
-                              <h3 className="font-bold text-lg">{bodyType.name}</h3>
-                              <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
-                                {bodyType.category}
-                              </span>
-                            </div>
-                          </td>
-                        ))}
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-gray-100">
-                      <tr>
-                        <td className="p-4 font-semibold text-gray-600">Description</td>
-                        {compareList.map((bodyType) => (
-                          <td key={bodyType.id} className="p-4 text-sm text-gray-600">
-                            {bodyType.description}
-                          </td>
-                        ))}
-                      </tr>
-                      <tr>
-                        <td className="p-4 font-semibold text-gray-600">Key Features</td>
-                        {compareList.map((bodyType) => (
-                          <td key={bodyType.id} className="p-4">
-                            <ul className="text-sm space-y-1">
-                              {bodyType.features.map((feature, i) => (
-                                <li key={i} className="flex items-center">
-                                  <div className="w-1.5 h-1.5 bg-green-500 rounded-full mr-2"></div>
-                                  {feature}
-                                </li>
-                              ))}
-                            </ul>
-                          </td>
-                        ))}
-                      </tr>
-                      <tr>
-                        <td className="p-4 font-semibold text-gray-600">Applications</td>
-                        {compareList.map((bodyType) => (
-                          <td key={bodyType.id} className="p-4">
-                            <div className="flex flex-wrap gap-1">
-                              {bodyType.applications.map((app, i) => (
-                                <span key={i} className="text-xs bg-blue-50 text-blue-600 px-2 py-1 rounded">
-                                  {app}
-                                </span>
-                              ))}
-                            </div>
-                          </td>
-                        ))}
-                      </tr>
-                      <tr>
-                        <td className="p-4 font-semibold text-gray-600">Customer Testimonial</td>
-                        {compareList.map((bodyType) => (
-                          <td key={bodyType.id} className="p-4">
-                            <blockquote className="text-sm italic text-gray-600 mb-2">
-                              "{bodyType.testimonial.quote}"
-                            </blockquote>
-                            <cite className="text-xs text-gray-500">
-                              - {bodyType.testimonial.author}, {bodyType.testimonial.company}
-                            </cite>
-                          </td>
-                        ))}
-                      </tr>
-                      <tr>
-                        <td className="p-4 font-semibold text-gray-600">Actions</td>
-                        {compareList.map((bodyType) => (
-                          <td key={bodyType.id} className="p-4">
-                            <div className="space-y-2">
-                              <Link
-                                href={`/body-types/${bodyType.id}`}
-                                className="block w-full bg-black text-white text-center py-2 rounded font-medium hover:bg-gray-800 transition-colors"
-                              >
-                                View Details
-                              </Link>
-                              <Link
-                                href="/contact"
-                                className="block w-full border border-gray-300 text-center py-2 rounded font-medium hover:bg-gray-50 transition-colors"
-                              >
-                                Get Quote
-                              </Link>
-                            </div>
-                          </td>
-                        ))}
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
+              {/* Image and Navigation */}
+              <div className="relative">
+                <Image
+                  src={selectedGallery[currentImageIndex] || "/placeholder.svg"}
+                  alt={`Gallery image ${currentImageIndex + 1}`}
+                  width={1200}
+                  height={800}
+                  className="object-contain w-full h-auto max-h-[75vh]"
+                />
 
-                {compareList.length < 3 && (
-                  <div className="mt-6 p-4 bg-blue-50 rounded-lg">
-                    <p className="text-sm text-blue-600">
-                      💡 You can compare up to 3 body types. Add more from the main page to see detailed comparisons.
-                    </p>
-                  </div>
+                {/* Navigation Buttons */}
+                {selectedGallery.length > 1 && (
+                  <>
+                    <button
+                      onClick={prevImage}
+                      className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+                      </svg>
+                    </button>
+                    <button
+                      onClick={nextImage}
+                      className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/70 text-white p-3 rounded-full"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                    </button>
+                  </>
                 )}
               </div>
+
+              {/* Thumbnail Strip */}
+              {selectedGallery.length > 1 && (
+                <div className="p-4 bg-gray-50 border-t border-gray-200">
+                  <div className="flex space-x-2 overflow-x-auto">
+                    {selectedGallery.map((image, index) => (
+                      <button
+                        key={index}
+                        onClick={() => setCurrentImageIndex(index)}
+                        className={`relative w-20 h-16 rounded overflow-hidden border-2 transition-all ${
+                          currentImageIndex === index ? "border-blue-500 ring-2 ring-blue-200" : "border-gray-300"
+                        }`}
+                      >
+                        <Image
+                          src={image || "/placeholder.svg"}
+                          alt={`Thumbnail ${index + 1}`}
+                          fill
+                          className="object-cover"
+                        />
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              )}
             </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
 
-      {/* Image Gallery Modal */}
+      {/* Compare Modal */}
       <AnimatePresence>
-        {showImageGallery && selectedGallery.length > 0 && (
+        {showCompareModal && (
           <motion.div
-            className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center"
+            className="fixed top-0 left-0 w-full h-full bg-black/80 z-50 flex items-center justify-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setShowImageGallery(false)}
           >
             <motion.div
-              className="relative max-w-4xl max-h-[90vh] w-full h-full flex items-center justify-center p-4"
+              className="relative bg-white rounded-xl shadow-lg max-w-5xl max-h-[90vh] overflow-auto"
               initial={{ scale: 0.9 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0.9 }}
-              onClick={(e) => e.stopPropagation()}
             >
               {/* Close Button */}
               <button
-                onClick={() => setShowImageGallery(false)}
-                className="absolute top-4 right-4 z-10 bg-white/20 hover:bg-white/30 text-white p-2 rounded-full transition-colors"
+                onClick={() => setShowCompareModal(false)}
+                className="absolute top-4 right-4 bg-black/50 hover:bg-black/70 text-white p-2 rounded-full z-10"
               >
-                <X size={24} />
+                <X size={20} />
               </button>
 
-              {/* Previous Button */}
-              {selectedGallery.length > 1 && (
-                <button
-                  onClick={prevImage}
-                  className="absolute left-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-colors"
-                >
-                  <ChevronRight size={24} className="rotate-180" />
-                </button>
-              )}
+              {/* Comparison Content */}
+              <div className="p-8">
+                <h2 className="text-3xl font-bold mb-6 text-center">Compare Body Types</h2>
 
-              {/* Next Button */}
-              {selectedGallery.length > 1 && (
-                <button
-                  onClick={nextImage}
-                  className="absolute right-4 top-1/2 transform -translate-y-1/2 z-10 bg-white/20 hover:bg-white/30 text-white p-3 rounded-full transition-colors"
-                >
-                  <ChevronRight size={24} />
-                </button>
-              )}
-
-              {/* Main Image */}
-              <div className="relative w-full h-full flex items-center justify-center">
-                <img
-                  src={selectedGallery[currentImageIndex] || "/placeholder.svg?height=600&width=800&text=Gallery+Image"}
-                  alt={`Gallery image ${currentImageIndex + 1}`}
-                  className="max-w-full max-h-full object-contain rounded-lg"
-                  style={{ maxWidth: "90vw", maxHeight: "70vh" }}
-                />
+                {compareList.length === 0 ? (
+                  <p className="text-gray-600 text-center">No body types selected for comparison.</p>
+                ) : (
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    {compareList.map((bodyType) => (
+                      <div key={bodyType.id} className="border border-gray-200 rounded-xl p-6">
+                        <h3 className="text-xl font-bold mb-4">{bodyType.name}</h3>
+                        <div className="relative h-48 mb-4">
+                          <Image
+                            src={bodyType.image || "/placeholder.svg"}
+                            alt={bodyType.name}
+                            fill
+                            className="object-cover rounded-lg"
+                          />
+                        </div>
+                        <p className="text-gray-600 mb-4">{bodyType.description}</p>
+                        <ul className="text-sm text-gray-600 space-y-2">
+                          <li>
+                            <strong>Category:</strong> {bodyType.category}
+                          </li>
+                          <li>
+                            <strong>Features:</strong> {bodyType.features.join(", ")}
+                          </li>
+                          <li>
+                            <strong>Applications:</strong> {bodyType.applications.join(", ")}
+                          </li>
+                        </ul>
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
-
-              {/* Image Counter */}
-              <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 bg-black/70 text-white px-4 py-2 rounded-full">
-                {currentImageIndex + 1} / {selectedGallery.length}
-              </div>
-
-              {/* Thumbnail Strip */}
-              {selectedGallery.length > 1 && (
-                <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 flex space-x-2 max-w-full overflow-x-auto">
-                  {selectedGallery.map((image, index) => (
-                    <button
-                      key={index}
-                      onClick={() => setCurrentImageIndex(index)}
-                      className={`relative w-16 h-12 rounded overflow-hidden border-2 transition-all ${
-                        index === currentImageIndex ? "border-white" : "border-transparent opacity-70 hover:opacity-100"
-                      }`}
-                    >
-                      <Image
-                        src={image || "/placeholder.svg"}
-                        alt={`Thumbnail ${index + 1}`}
-                        fill
-                        className="object-cover"
-                      />
-                    </button>
-                  ))}
-                </div>
-              )}
             </motion.div>
           </motion.div>
         )}
