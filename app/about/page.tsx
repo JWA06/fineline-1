@@ -98,21 +98,6 @@ const leadershipTeam = [
       linkedin: "https://linkedin.com/in/devonbowes",
     },
   },
-  {
-    name: "Callum Dunn",
-    position: "Team Leader / Fully Skilled Body Builder",
-    experience: "11+ years",
-    image: "/images/josh-logan.jpeg",
-    bio: "Callum started in the industry at 16 and has 11 years experience. His knowledge and skills help him take on some of our most Bespoke and challenging work.",
-    achievements: [
-      "Developed comprehensive quality control protocols",
-      "Achieved 99.5% quality approval rate",
-      "Reduced defect rates by 45%",
-    ],
-    socialMedia: {
-      linkedin: "https://linkedin.com/in/callum",
-    },
-  },
 ]
 
 // Team members
@@ -739,7 +724,7 @@ export default function About() {
                   onClick={() => setSelectedTeamMember(member)}
                 >
                   <div
-                    className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl focus:shadow-2xl hover:border-gray-300 focus:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 focus:-translate-y-2 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:ring-opacity-50 min-h-[500px] flex flex-col"
+                    className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl focus:shadow-2xl hover:border-gray-300 focus:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 focus:-translate-y-2 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:ring-opacity-50"
                     role="button"
                     tabIndex={0}
                     aria-label={`View ${member.name}'s profile`}
@@ -757,7 +742,7 @@ export default function About() {
                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                     </div>
-                    <div className="p-8 flex-1 flex flex-col">
+                    <div className="p-6">
                       <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600 transition-colors">
                         {member.name}
                       </h3>
@@ -766,7 +751,9 @@ export default function About() {
                         <Clock size={14} className="mr-1" aria-hidden="true" />
                         {member.experience}
                       </div>
-                      <div className="mt-3 text-sm text-gray-600 leading-relaxed flex-1">{member.bio}</div>
+                      <div className="mt-3 text-xs text-gray-500 leading-relaxed line-clamp-3">
+                        {member.bio.substring(0, 120)}...
+                      </div>
                     </div>
                   </div>
                 </motion.div>
@@ -810,7 +797,7 @@ export default function About() {
                   onClick={() => setSelectedTeamMember(member)}
                 >
                   <div
-                    className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl focus:shadow-2xl hover:border-gray-300 focus:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 focus:-translate-y-2 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:ring-opacity-50 min-h-[500px] flex flex-col"
+                    className="bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 hover:shadow-2xl focus:shadow-2xl hover:border-gray-300 focus:border-gray-300 transition-all duration-300 transform hover:-translate-y-2 focus:-translate-y-2 focus:outline-none focus:ring-4 focus:ring-gray-300 focus:ring-opacity-50"
                     role="button"
                     tabIndex={0}
                     aria-label={`View ${member.name}'s profile`}
@@ -828,7 +815,7 @@ export default function About() {
                         className="object-cover transition-transform duration-500 group-hover:scale-110"
                       />
                     </div>
-                    <div className="p-8 flex-1 flex flex-col">
+                    <div className="p-6">
                       <h3 className="text-xl font-bold mb-2 group-hover:text-blue-600 transition-colors">
                         {member.name}
                       </h3>
@@ -837,7 +824,9 @@ export default function About() {
                         <Clock size={14} className="mr-1" aria-hidden="true" />
                         {member.experience}
                       </div>
-                      <div className="mt-3 text-sm text-gray-600 leading-relaxed flex-1">{member.bio}</div>
+                      <div className="mt-3 text-xs text-gray-500 leading-relaxed line-clamp-3">
+                        {member.bio.substring(0, 120)}...
+                      </div>
                     </div>
                   </div>
                 </motion.div>

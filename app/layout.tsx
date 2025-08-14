@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   description:
     "FineLine Bodies delivers custom truck body solutions with unmatched craftsmanship and attention to detail.",
   viewport: "width=device-width, initial-scale=1", // Add viewport meta tag
-    generator: 'v0.dev'
+    generator: 'v0.app'
 }
 
 export default function RootLayout({
